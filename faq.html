@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../images/logo/title_logo.png" type="image/x-icon">
+<link rel="stylesheet" href="../css/sub.css">
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script src="../javascript/menu.js" defer></script>
+<script type="module">
+	import { Configuration, OpenAIApi } from 'https://cdn.skypack.dev/openai';
+		document.querySelector("#chat_inp").addEventListener("keyup",(e)=> {
+			if(e.key === 'Enter') {
+				const template = `<div class="chat_line">
+				<span class="chat_box mine">
+					${document.querySelector("#chat_inp").value}
+				</span>
+			</div>`
+			const panel = document.querySelector("#chat_inp");
+			document.querySelector(".chat_content").insertAdjacentHTML("beforeend",template);
+			const configuration = new Configuration({
+			apiKey: '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',
+			});
+			const openai = new OpenAIApi(configuration);
+			openai.createCompletion({
+			model: "text-davinci-003",
+			prompt: document.querySelector("#chat_inp").value,
+			temperature: 0.2,
+			max_tokens: 256,
+			top_p: 1,
+			frequency_penalty: 0,
+			presence_penalty: 0,
+			}).then((result)=> {
+				const template = `<div class="chat_line">
+				<span class="chat_box">${result.data.choices[0].text}</span>
+			</div>`
+			document.querySelector(".chat_content").insertAdjacentHTML("beforeend",template);
+			});
+			panel.value = '';
+			}
+				});
+				document.querySelector("#send").addEventListener("click",()=> {
+					const template = `<div class="chat_line">
+					<span class="chat_box mine">
+						${document.querySelector("#chat_inp").value}
+					</span>
+				</div>`
+				document.querySelector(".chat_content").insertAdjacentHTML("beforeend",template);
+				const panel = document.querySelector("#chat_inp");
+				const configuration = new Configuration({
+				apiKey: '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',
+				});
+				const openai = new OpenAIApi(configuration);
+				openai.createCompletion({
+				model: "text-davinci-003",
+				prompt: document.querySelector("#chat_inp").value,
+				temperature: 0.2,
+				max_tokens: 256,
+				top_p: 1,
+				frequency_penalty: 0,
+				presence_penalty: 0,
+				}).then((result)=> {
+					const template = `<div class="chat_line">
+					<span class="chat_box">${result.data.choices[0].text}</span>
+				</div>`
+				document.querySelector(".chat_content").insertAdjacentHTML("beforeend",template);
+				});
+				panel.value = '';
+						})
+</script>
+<title>Faq</title>
+<style>
+	@media screen and (min-width:1366px) {
+		.pc_menu_lists> li:nth-child(5)> span {
+			color: #5865f5;
+		}
+	}
+</style>
+</head>
+<body>
+	<header>
+		<div class="header_inner">
+		<h1 class="logo" onclick="location.href='index.html'">
+		<img src="../images/logo/sony_logo.svg" alt="logo">
+		</h1>
+		<nav>
+		<ul class="pc_menu_lists">
+			<li>
+				<span onclick="location.href='product.html'">Product</span>
+				</li>
+			<li>
+				<span onclick="location.href='login.html'">Login</span>
+			</li>
+			<li>
+				<span onclick="location.href='register.html'">Join</span>
+			</li>
+			<li>
+				<span onclick="location.href='cart.html'">Order</span>
+			</li>
+
+			<li onclick="location.href='faq.html'">
+			<span>Faq & Notice</span>
+			</li>
+			<li>
+				<span onclick="location.href='inquiry.html'">Inquiry</span>
+				</li>
+			<li>
+				<span onclick="location.href='membership.html'">Membership</span>
+				</li>
+
+				<li>
+					<span onclick="location.href='gallery.html'">Gallery</span>
+					</li>
+			<li>
+			<span onclick="location.href='location.html'">Location</span>
+			</li>
+		</ul>
+		<ul class="main_menu">
+			<li class="pc log cursor">
+			<span
+			onclick="location.href='login.html'"><img src="../images/icon/main_login.svg" alt="login"></span>
+			</li>
+			<li class="pc cursor cart_go" onclick="location.href='cart.html'">
+			<img src="../images/icon/main_cart.svg" alt="장바구니">
+			<span class="badge"><span>0</span></span>
+			</li>
+			<li class="search cursor">
+			<img src="../images/icon/search.svg" alt="search_img">
+			<div class="search_contents">
+				<div class="search_content">
+					<button class="search_close">
+					<span class="material-symbols-outlined"> close </span>
+					</button>
+					<form action="find_out" method="get">
+						<div class="input_wraper">
+							<button>
+							<span class="material-symbols-outlined"> search </span>
+							</button>
+							<input type="search" placeholder="검색어를 입력해주세요.">
+						</div>
+					</form>
+					<div class="suggestions_wraper">
+						<div class="nodata">
+							<p>
+									최근 검색어가 없습니다.
+							</p>
+						</div>
+						<div class="suggestions">
+							<p>
+									인기검색어
+							</p>
+							<div class="recommend">
+								<ul>
+									<li># WH-1000XM5</li>
+									<li># ZV-1</li>
+									<li># ILCE-7M4</li>
+									<li># LinkBuds S</li>
+									<li># LSPX-S3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="search_dashboard_wraper">
+						<div class="contents">
+							<img src="../images/main/search_img_1.png" alt="카메라">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="contents">
+							<img src="../images/main/search_img_2.png" alt="이어폰">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="pc_contents">
+							<img src="../images/main/search_img_3.png" alt="">
+							<span class="badge_text" style="color: rgb(255, 78, 0);">
+							NEW </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>
+			<li id="menu">
+			<span>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+			</span>
+			</li>
+		</ul>
+		</nav>
+		</div>
+		<div class="sitemap">
+		<div class="txt-box">
+			<ul class="link-menu">
+				<li class="mobile_member_login member_login">
+				<span onclick="location.href='register.html'">회원가입</span>
+				</li>
+				<li class="member_menuorder">
+				<span onclick="location.href='login.html'">주문/배송 조회</span>
+				</li>
+				<li class="mobile_member_cart cart_go">
+				<span onclick="location.href='cart.html'">장바구니 <span class="badge">
+				<span>0</span>
+				</span>
+				</span>
+				</li>
+			</ul>
+			<ul class="sitemap-menu">
+				<li class="log">
+				<span onclick="location.href='login.html'">login</span>
+				<div class="line">
+				</div>
+				<ul class="sub_menu">
+					<li>
+					<span onclick="location.href='product.html'">product</span>
+					</li>
+					<li>
+					<span onclick="location.href='location.html'">location</span>
+					</li>
+					<li>
+					<span onclick="location.href='membership.html'">Membership</span>
+					</li>
+					<li>
+					<span onclick="location.href='gallery.html'">gallery</span>
+					</li>
+					<li>
+					<span onclick="location.href='faq.html'">faq & notice</span>
+					</li>
+					<li>
+					<span onclick="location.href='inquiry.html'">inquiry</span>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			<ul class="sns">
+				<li>
+				<a>
+				<img src="../images/icon/facebook.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/instagram.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/youtube.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/blog.svg" alt="">
+				</a>
+				</li>
+			</ul>
+		</div>
+		<div class="pc_sitemap_img_box">
+			<ul class="site_img_list">
+				<li><img src="../images/main/pc_menu_img_1.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_2.jpg" alt="" style="object-fit:initial;"></li>
+				<li><img src="../images/main/pc_menu_img_3.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_4.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_5.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_6.jpg" alt=""></li>
+			</ul>
+		</div>
+		</div>
+		</header>
+<div class="faq_notice">
+	<div class="container">
+		<div class="faq_content">
+			<div class="faq_notice_head">
+				<div class="common_head">
+					<h1 class="common_head_name">FAQ & 공지사항</h1>
+					<p class="common_head_txt">
+						 소니스토어에 많이 물어보시는 질문과 <br class="mobile">
+						 새로운 소식을 만나보세요.
+					</p>
+				</div>
+				<a href=""></a>
+				<div class="tab_link">
+					<ul class="tab_link_inner">
+						<li class="tabs on" onclick="location.href='faq.html'">
+						<a class="tab_btn">
+						<span class="tit">FAQ</span>
+						</a>
+						</li>
+						<li class="tabs">
+						<a class="tab_btn" href='#notice'>
+						<span class="tit">공지사항</span>
+						</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="faq_notice_inner">
+				<div class="faq_notice_cont">
+					<div class="category_center">
+						<div class="category_slide_tab swiper-container">
+							<div class="swiper-container swiper-wrapper mySwiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide on">
+										<a class="btn"><span>전체</span></a>
+									</div>
+									<div class="swiper-slide">
+										<a class="btn"><span>주문/결제</span></a>
+									</div>
+									<div class="swiper-slide">
+										<a class="btn"><span>세금계산서/영수증</span></a>
+									</div>
+									<div class="swiper-slide">
+										<a class="btn"><span>배송</span></a>
+									</div>
+									<div class="swiper-slide">
+										<a class="btn"><span>취소/환불/AS</span></a>
+									</div>
+									<div class="swiper-slide">
+										<a class="btn"><span>회원관리</span></a>
+									</div>
+									<div class="swiper-slide">
+										<a class="btn"><span>쿠폰/마일리지</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="category_list">
+						<div class="panels faq_all_wraper ">
+							<div class="faq_all">
+								<div class="faq_item">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										주문/결제 </span>
+										<span class="acc_tit">
+										ESP상품의 결제 방법에는 무엇이 있나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													ESP와 같은 무형 상품은 신용카드로 결제 가능하며, 가상계좌 결제는 사용하실 수 없습니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										회원관련 </span>
+										<span class="acc_tit">
+										알파 아카데미 신청은 어디서 하나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													알파 아카데미 신청은 소니스토어 메인 페이지 하단, 혹은 알파 사이트에서 신청하실 수 있습니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										쿠폰/마일리지 </span>
+										<span class="acc_tit">
+										마일리지로 ESP(연장 서비스플랜) 구입이 가능한가요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													ESP는 마일리지로 구입 가능합니다 단 구매 시 마일리지 적립은 되지 않습니다.) </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										쿠폰/마일리지 </span>
+										<span class="acc_tit">
+										온라인 쿠폰을 소니스토어 직영점 및 전화 주문 시에도 사용할 수 있나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													소니스토어 매장 방문 시 출력된 쿠폰을 지참하시면 사용하실 수 있습니다. <br>
+													 전화주문 시에는 쿠폰 번호를 알려주시면 결제 시 적용 받으실 수 있습니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										쿠폰/마일리지 </span>
+										<span class="acc_tit">
+										소니스토어 회원 마일리지는 언제 사용할 수 있나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													마일리지는 소니스토어 회원께 제공되는 적립금으로 소니스토어 제품 구매 시 현금처럼 사용하실 수 있습니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										주문/결제 </span>
+										<span class="acc_tit">
+										결제방법에는 무엇이 있나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													가상계좌, 신용카드로 결제 가능하며, 쿠폰 및 마일리지를 보유하신 경우에는 동시에 사용하실 수 있습니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										주문/결제 </span>
+										<span class="acc_tit">
+										가상계좌 이용 시 입금확인은 어떻게 하나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													주문 접수 시 주문 완료 메일과 SMS(주문자 핸드폰번호)를 통해 계좌번호를 보내 드리오니 <br class="mobile">
+													 해당 계좌로 입금해주시기 바랍니다. <br class="mobile">
+													 가상 계좌번호 입금 확인은 오전 및 오후 각각 2회씩 진행 되고 있습니다.
+													<p>
+														 입금 후 익일까지 확인이 되어 있지 않은 경우에는 소니스토어로 연락 주시기 바랍니다.
+													</p>
+													<p>
+														 주문 후 3일 이내(영업일 기준)에 입금되지 않을 경우는 주문이 자동으로 취소됩니다.
+													</p>
+													<p>
+														 주문 취소 후 재 주문을 통해 가상계좌 번호를 재 발송 해 드리고 있습니다.
+													</p>
+													<p>
+														 주문 하실 때 입력하신 입금인명과 실제 입금하신 분의 이름이 똑같아야 입금확인이 됩니다.
+													</p>
+													<p>
+														 만약 다를 경우 반드시 고객지원센터(1588-0911)나 이메일(sonystore3@sony.co.kr)로 연락 주시기 바랍니다.
+													</p>
+													</span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item false">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										주문/결제 </span>
+										<span class="acc_tit">
+										신용카드 무이자할부 혜택은 어디서 확인하나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													결제 페이지에서 확인하실 수 있습니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item false">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										세금계산서/영수증 </span>
+										<span class="acc_tit">
+										신용카드 영수증 출력은 어떻게 하나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													<p>
+														 신용카드 영수증은 고객님께서 입력해주신 e-mail로 보내 드리는 결제확인메일의 버튼을 클릭하시면 바로 출력 하실 수 있습니다.
+													</p>
+													<p>
+														 만약 e-mail을 지우셨을 경우 이니시스 웹사이트(www.inicis.com)의 사용내역 및 청구내역 조회에서 발급 받으실 수 있습니다.
+													</p>
+													</span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item false">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										세금계산서/영수증 </span>
+										<span class="acc_tit">
+										현금영수증 및 세금계산서 발급은 가능한가요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													<p>
+														<span>&#xFEFF;</span>
+														<span>가상 계좌 입금을 통한 결제일 경우, 현금 영수증 및 세금계산서가 발급 가능합니다.</span>
+													</p>
+													<p>
+														 구매 결제창을 통해 현금 영수증 및 세금계산서 발급 신청을 할 수 있으나 누락 또는 수정이 필요한 경우는 고객지원센터 1588-0911 또는 소니스토어(sonystore3@sony.co.kr) 로 연락 주시기 바랍니다.
+													</p>
+													</span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item false">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										배송 </span>
+										<span class="acc_tit">
+										배송료 부담은 누가하나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													소니스토어는 무료 배송을 원칙으로 하고 있습니다<span>.&nbsp;</span>
+													다만 산간 도서지방의 경우는 상품 특성에 따라 배송료를 &nbsp; 부담하실 수도 있습니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item false">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										배송 </span>
+										<span class="acc_tit">
+										비회원 주문 시 주문 배송 조회는 어디서 하나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													비회원 주문 시 페이지 우측 상단의 주문/배송조회를 클릭하신 후 주문번호 및 비밀번호(주문 시 입력하신 비밀번호) 를 입력하시면 됩니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item false">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										회원관련 </span>
+										<span class="acc_tit">
+										소니스토어 회원 가입은 어떻게 해야 하나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													소니스토어 온라인사이트에서 회원 가입을 하시면 누구나 소니스토어 회원이 되실 수 있습니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="faq_item false">
+									<div class="faq_item_head">
+										<span class="acc_btn">
+										<span class="category_tit">
+										회원관련 </span>
+										<span class="acc_tit">
+										개명한 경우 이름을 어떻게 변경 하나요? </span>
+										<span class="acc_arrow">
+										선택됨/상세 닫기 </span>
+										</span>
+									</div>
+									<div class="faq_item_inner">
+										<div class="acc_box">
+											<p class="txt">
+												<p>
+													<span>
+													개명하신 경우 기존 아이디로 로그인 하신 후 <br class="mobile">
+													 회원정보를 수정하실 수 있습니다. <br>
+													 다만, 개명한 이름으로 실명인증이 가능해야 합니다. </span>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="common_all_btn faq">
+									<button>더 보기</button>
+								</div>
+							</div>
+						</div>
+						<div class="panels false">
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									주문/결제 </span>
+									<span class="acc_tit">
+									ESP상품의 결제 방법에는 무엇이 있나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												ESP와 같은 무형 상품은 신용카드로 결제 가능하며, 가상계좌 결제는 사용하실 수 없습니다. </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									주문/결제 </span>
+									<span class="acc_tit">
+									결제방법에는 무엇이 있나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												가상계좌, 신용카드로 결제 가능하며, 쿠폰 및 마일리지를 보유하신 경우에는 동시에 사용하실 수 있습니다. </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									주문/결제 </span>
+									<span class="acc_tit">
+									가상계좌 이용 시 입금확인은 어떻게 하나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												주문 접수 시 주문 완료 메일과 SMS(주문자 핸드폰번호)를 통해 계좌번호를 보내 드리오니 <br class="mobile">
+												 해당 계좌로 입금해주시기 바랍니다. <br class="mobile">
+												 가상 계좌번호 입금 확인은 오전 및 오후 각각 2회씩 진행 되고 있습니다.
+												<p>
+													 입금 후 익일까지 확인이 되어 있지 않은 경우에는 소니스토어로 연락 주시기 바랍니다.
+												</p>
+												<p>
+													 주문 후 3일 이내(영업일 기준)에 입금되지 않을 경우는 주문이 자동으로 취소됩니다.
+												</p>
+												<p>
+													 주문 취소 후 재 주문을 통해 가상계좌 번호를 재 발송 해 드리고 있습니다.
+												</p>
+												<p>
+													 주문 하실 때 입력하신 입금인명과 실제 입금하신 분의 이름이 똑같아야 입금확인이 됩니다.
+												</p>
+												<p>
+													 만약 다를 경우 반드시 고객지원센터(1588-0911)나 이메일(sonystore3@sony.co.kr)로 연락 주시기 바랍니다.
+												</p>
+												</span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									주문/결제 </span>
+									<span class="acc_tit">
+									신용카드 무이자할부 혜택은 어디서 확인하나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												결제 페이지에서 확인하실 수 있습니다. </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panels false">
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									세금계산서/영수증 </span>
+									<span class="acc_tit">
+									신용카드 영수증 출력은 어떻게 하나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												<p>
+													 신용카드 영수증은 고객님께서 입력해주신 e-mail로 보내 드리는 결제확인메일의 버튼을 클릭하시면 바로 출력 하실 수 있습니다.
+												</p>
+												<p>
+													 만약 e-mail을 지우셨을 경우 이니시스 웹사이트(www.inicis.com)의 사용내역 및 청구내역 조회에서 발급 받으실 수 있습니다.
+												</p>
+												</span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									세금계산서/영수증 </span>
+									<span class="acc_tit">
+									현금영수증 및 세금계산서 발급은 가능한가요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												<p>
+													<span>&#xFEFF;</span>
+													<span>가상 계좌 입금을 통한 결제일 경우, 현금 영수증 및 세금계산서가 발급 가능합니다.</span>
+												</p>
+												<p>
+													 구매 결제창을 통해 현금 영수증 및 세금계산서 발급 신청을 할 수 있으나 누락 또는 수정이 필요한 경우는 고객지원센터 1588-0911 또는 소니스토어(sonystore3@sony.co.kr) 로 연락 주시기 바랍니다.
+												</p>
+												</span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panels false">
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									배송 </span>
+									<span class="acc_tit">
+									배송료 부담은 누가하나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												소니스토어는 무료 배송을 원칙으로 하고 있습니다<span>.&nbsp;</span>
+												다만 산간 도서지방의 경우는 상품 특성에 따라 배송료를 &nbsp; 부담하실 수도 있습니다. </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									배송 </span>
+									<span class="acc_tit">
+									비회원 주문 시 주문 배송 조회는 어디서 하나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												비회원 주문 시 페이지 우측 상단의 주문/배송조회를 클릭하신 후 주문번호 및 비밀번호(주문 시 입력하신 비밀번호) 를 입력하시면 됩니다. </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panels false">
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									취소/환불/AS </span>
+									<span class="acc_tit">
+									주문취소 및 반품 신청은 어떻게 하나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												<p>
+													 주문취소 및 반품신청은 e-mail 및 고객지원센터로 요청하실 수 있습니다.
+												</p>
+												<p>
+													 (e-mail : cshelp@sony.co.kr / 전화 : 1588-0911)
+												</p>
+												<p>
+													 e-mail을 통한 신청 시 운영시간 이후에는 익일 처리되므로 다소 지연될 수 있습니다.
+												</p>
+												<br>
+												<p>
+													 구입하신 상품에 대해서는 제품을 받으신 날로부터 <span style="color: rgb(100, 73, 173); font-weight:bold;">
+													7일 이내에 교환 및 반품이 가능 </span>
+													<span>
+													합니다. </span>
+												</p>
+												<p>
+													 단, 구입하신 상품의 내용이 표시, 광고 내용과 다르거나 계약 내용과 다르게 이행된 경우에는 해당상품을 공급 받은 날부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 청약철회 가능합니다.
+												</p>
+												<p>
+													 제품하자가 아닌 변심으로 인한 반품 시에는 고객님께서 반품 비용을 부담하셔야 합니다.
+												</p>
+												</span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									취소/환불/AS </span>
+									<span class="acc_tit">
+									ESP상품의 결제 방법에는 무엇이 있나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												<p>
+													 가상 계좌 주문 취소 및 환불 요청은 “소니 온라인 스토어 -> 마이페이지 -> 주문/배송” 내역에서 취소신청이 가능합니다. <br>
+												</p>
+												<p>
+													 고객지원 센터를 통해서 취소하시는 경우에는, 입금자 확인을 위해 고객센터 통화 후 입금한 통장의 사본을 보내주셔야 합니다.
+												</p>
+												<br>
+												<p>
+													 환불 금액은 신청하신 날로부터 3영업일 이내에 완료됩니다.
+												</p>
+												<p>
+													 환불 관련하여 더 궁금하신 부분은 소니코리아 고객지원센터(1588-0911) 또는 소니스토어(sonystore3@sony.co.kr)로 연락 바랍니다.
+												</p>
+												</span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panels false">
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									회원관련 </span>
+									<span class="acc_tit">
+									알파 아카데미 신청은 어디서 하나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												알파 아카데미 신청은 소니스토어 메인 페이지 하단, 혹은 알파 사이트에서 신청하실 수 있습니다. </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									회원관련 </span>
+									<span class="acc_tit">
+									소니스토어 회원 가입은 어떻게 해야 하나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												소니스토어 온라인사이트에서 회원 가입을 하시면 누구나 소니스토어 회원이 되실 수 있습니다. </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panels false">
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									쿠폰/마일리지 </span>
+									<span class="acc_tit">
+									마일리지로 ESP(연장 서비스플랜) 구입이 가능한가요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												ESP는 마일리지로 구입 가능합니다 단 구매 시 마일리지 적립은 되지 않습니다.) </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									쿠폰/마일리지 </span>
+									<span class="acc_tit">
+									온라인 쿠폰을 소니스토어 직영점 및 전화 주문 시에도 사용할 수 있나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												소니스토어 매장 방문 시 출력된 쿠폰을 지참하시면 사용하실 수 있습니다. <br>
+												 전화주문 시에는 쿠폰 번호를 알려주시면 결제 시 적용 받으실 수 있습니다. </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq_item">
+								<div class="faq_item_head">
+									<span class="acc_btn">
+									<span class="category_tit">
+									쿠폰/마일리지 </span>
+									<span class="acc_tit">
+									소니스토어 회원 마일리지는 언제 사용할 수 있나요? </span>
+									<span class="acc_arrow">
+									선택됨/상세 닫기 </span>
+									</span>
+								</div>
+								<div class="faq_item_inner">
+									<div class="acc_box">
+										<p class="txt">
+											<p>
+												<span>
+												마일리지는 소니스토어 회원께 제공되는 적립금으로 소니스토어 제품 구매 시 현금처럼 사용하실 수 있습니다. </span>
+											</p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "7",
+      loop: false,
+      allowTouchMove: false,
+      observer: true,
+      spaceBetween: 10,
+      observeParents: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      breakpoints: {
+        959: {
+          loop: false,
+          slidesPerView: 'auto',
+          allowTouchMove: true,
+        },
+      },
+    });
+    const categories = document.querySelectorAll(".swiper-slide");
+    const panels = document.querySelectorAll(".panels");
+    categories.forEach((el, i) => {
+      el.addEventListener("click", () => {
+        for (let i = 0; i < categories.length; i++) {
+          categories[i].classList.remove("on");
+          panels[i].classList.add("false");
+        }
+        panels[i].classList.remove("false");
+        categories[i].classList.add("on");
+      })
+    });
+    const faq_all_btn = document.querySelector(".common_all_btn.faq button");
+    const faq_all = document.querySelectorAll(".faq_all .faq_item");
+    faq_all_btn.addEventListener("click", () => {
+      faq_all_btn.classList.add("off");
+      for (let el of faq_all) {
+        el.classList.remove("false");
+      }
+    });
+    const acc_btns = document.querySelectorAll(".acc_btn");
+    const acc_panels = document.querySelectorAll(".faq_item_inner");
+    acc_btns.forEach((el, i) => {
+      el.addEventListener("click", () => {
+        if (!acc_btns[i].classList.contains("on")) {
+          acc_btns[i].classList.add("on");
+          acc_panels[i].classList.add("on");
+        } else {
+          acc_btns[i].classList.remove("on");
+          acc_panels[i].classList.remove("on");
+        }
+      });
+    });
+</script>
+<div class="faq_notice">
+	<div class="container">
+		<div class="faq_content">
+			<!-- <div class="faq_notice_head">
+        <div class="common_head">
+          <h1 class="common_head_name">FAQ & 공지사항</h1>
+          <p class="common_head_txt">
+            소니스토어에 많이 물어보시는 질문과 <br class="mobile">
+            새로운 소식을 만나보세요.
+          </p>
+        </div>
+        <div class="tab_link">
+          <ul class="tab_link_inner">
+            <li class="tabs" onclick="location.href='faq.html'">
+              <a class="tab_btn">
+                <span class="tit">FAQ</span>
+              </a>
+            </li>
+            <li class="tabs on" onclick="location.href='notice.html'">
+              <a class="tab_btn">
+                <span class="tit">공지사항</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+			<div class="faq_notice_inner" id="notice">
+				<div class="faq_notice_cont notice">
+					<div class="Notice_col_table_wrap">
+						<div class="Notice_col_table">
+							<div class="Notice_col_table_head">
+								<div class="Notice_col_table_row">
+									<div class="Notice_col_table_cell">
+										 번호
+									</div>
+									<div class="Notice_col_table_cell divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell">
+												 제목
+											</div>
+											<div class="Notice_table_cell">
+												 등록일
+											</div>
+											<div class="Notice_table_cell">
+												 조회수
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="Notice_col_table_body">
+								<div class="Notice_col_table_row">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 10
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>추석 연휴 소니스토어 온라인 배송 일정 안내</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="Notice_txt">
+													 2022-09-01
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 175
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_box">
+											<ul class="Notice_num10">
+												<li><strong>2022. 9. 6(화) 오후 12시까지 주문 건 : 당일 발송</strong></li>
+												<li><strong>2022. 9. 6(화) 오후 12시 이후 주문 건 : 9. 13(화)부터 순차 발송</strong></li>
+											</ul>
+											<p class="Notice_num10 text_etc">
+												 소니스토어 압구정 추석 연휴 휴무 : 9. 9(금) ~ 9. 12(월)
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="Notice_col_table_row">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 9
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>추석 연휴 소니스토어 압구정 휴무 안내</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="Notice_txt">
+													 2022-09-01
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 78
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_img_wraper">
+											<img src="../images/sub/notice_img_1.jpg" alt="공지사항 사진1">
+										</div>
+									</div>
+								</div>
+								<div class="Notice_col_table_row">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 8
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>[당첨자 발표] 벗지 않는 편안함 링크버즈 시리즈 체험단 모집</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="Notice_txt">
+													 2022-08-11
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 139
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_img_wraper">
+											<img src="../images/sub/notice_img_2.jpg" alt="공지사항 사진2">
+										</div>
+										<div class="Notice_cont">
+											<h2>링크버즈</h2>
+											<div class="Notice_cont_box">
+												<table class="Notice_table">
+												<colgroup>
+												<col style="width:50%;">
+												<col>
+												</colgroup>
+												<thead>
+												<tr>
+													<th scope="col" colspan="2">
+														 성명(휴대폰 뒷자리)
+													</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<td>
+														 강민*(2385)
+													</td>
+													<td>
+														 신옥*(0328)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 강선*(1799)
+													</td>
+													<td>
+														 안세*(6245)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 강소*(3120)
+													</td>
+													<td>
+														 안인*(0387)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 곽지*(9526)
+													</td>
+													<td>
+														 유설*(8142)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 권소*(8645)
+													</td>
+													<td>
+														 유진*(3807)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 권정*(4869)
+													</td>
+													<td>
+														 이미*(3549)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 김소*(5430)
+													</td>
+													<td>
+														 장대*(4862)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 김원*(1359)
+													</td>
+													<td>
+														 정승*(3934)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 김은*(6308)
+													</td>
+													<td>
+														 정재*(0152)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 김태*(8590)
+													</td>
+													<td>
+														 정현*(8412)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 남유*(5240)
+													</td>
+													<td>
+														 조수*(0318)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 문유*(1335)
+													</td>
+													<td>
+														 지하*(3619)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 박환*(1009)
+													</td>
+													<td>
+														 최지*(1487)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 서민*(7411)
+													</td>
+													<td>
+														 허정*(1911)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 성기*(0613)
+													</td>
+													<td>
+														 황유*(5479)
+													</td>
+												</tr>
+												</tbody>
+												</table>
+												<div class="Notice_acc_box">
+													<ul class="Notice_num10">
+														<li>
+														당첨자 명단은 이름 및 휴대폰 번호 마지막 4자리로 확인하실 수 있으며 당첨되신 분들께는 개별 연락 드립니다. </li>
+														<li>
+														경품에 대한 제세공과금은 본인 부담입니다. </li>
+														<li>
+														본 행사의 내용은 당사 사정에 따라 일부 변동될 수 있습니다. </li>
+														<li>
+														특별한 사유 없이 활동을 진행하지 않은 경우 체험단 활동 평가에 반영됩니다. </li>
+														<li>
+														본인이 기재한 개인정보는 체험단 선정 및 활동 운영을 위해 사용되며 프로그램 종료 후 폐기됩니다. </li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="Notice_col_table_row">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 7
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>소니스토어 압구정 임시 휴무 안내</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="Notice_txt">
+													 2022-04-29
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 1600
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_box">
+											<ul class="Notice_num10">
+												<li>
+												<strong>
+												임시 휴무일 : 2022. 5. 8(일) </strong>
+												</li>
+												<li>
+												<strong>
+												휴무 사유 : 배강빌딩 전기 설비 교체 작업 </strong>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="Notice_col_table_row">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 6
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>[당첨자 발표]벗지 않는 편안함 링크버즈 체험단 모집</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="Notice_txt">
+													 2022-04-26
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 1118
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_img_wraper">
+											<img src="../images/sub/notice_img_3.jpg" alt="공지사항 사진3">
+										</div>
+										<div class="Notice_cont">
+											<h2>링크버즈</h2>
+											<div class="Notice_cont_box">
+												<table class="Notice_table">
+												<colgroup>
+												<col style="width:50%;">
+												<col>
+												</colgroup>
+												<thead>
+												<tr>
+													<th scope="col" colspan="2">
+														 성명(휴대폰 뒷자리)
+													</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<td>
+														 강민*(2385)
+													</td>
+													<td>
+														 신옥*(0328)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 강선*(1799)
+													</td>
+													<td>
+														 안세*(6245)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 강소*(3120)
+													</td>
+													<td>
+														 안인*(0387)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 곽지*(9526)
+													</td>
+													<td>
+														 유설*(8142)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 권소*(8645)
+													</td>
+													<td>
+														 유진*(3807)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 권정*(4869)
+													</td>
+													<td>
+														 이미*(3549)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 김소*(5430)
+													</td>
+													<td>
+														 장대*(4862)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 김원*(1359)
+													</td>
+													<td>
+														 정승*(3934)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 김은*(6308)
+													</td>
+													<td>
+														 정재*(0152)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 김태*(8590)
+													</td>
+													<td>
+														 정현*(8412)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 남유*(5240)
+													</td>
+													<td>
+														 조수*(0318)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 문유*(1335)
+													</td>
+													<td>
+														 지하*(3619)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 박환*(1009)
+													</td>
+													<td>
+														 최지*(1487)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 서민*(7411)
+													</td>
+													<td>
+														 허정*(1911)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														 성기*(0613)
+													</td>
+													<td>
+														 황유*(5479)
+													</td>
+												</tr>
+												</tbody>
+												</table>
+												<div class="Notice_acc_box">
+													<ul class="Notice_num10">
+														<li>
+														당첨자 명단은 이름 및 휴대폰 번호 마지막 4자리로 확인하실 수 있으며 당첨되신 분들께는 개별 연락 드립니다. </li>
+														<li>
+														경품에 대한 제세공과금은 본인 부담입니다. </li>
+														<li>
+														본 행사의 내용은 당사 사정에 따라 일부 변동될 수 있습니다. </li>
+														<li>
+														특별한 사유 없이 활동을 진행하지 않은 경우 체험단 활동 평가에 반영됩니다. </li>
+														<li>
+														본인이 기재한 개인정보는 체험단 선정 및 활동 운영을 위해 사용되며 프로그램 종료 후 폐기됩니다. </li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="Notice_col_table_row false">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 5
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>SELP1635G 배송 지연 안내 드립니다</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="Notice_txt">
+													 2022-04-22
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 1118
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_box">
+											<div class="Notice_cont">
+												<p>
+													 현재 중국 상해 봉쇄로 SELP1635G 제품의 한국으로의 입고 일정이 지연 되고 있습니다. <br>
+													 사전 공지 드린 일정으로 제품의 출고가 어려울 것으로 예상 되며, 정확한 배송 일정은 현재 예상하기 어려운 상황입니다.
+												</p>
+												<p>
+													 이에 따라 SELP1635G 제품의 예약 구매를 진행 하신 고객분들께는 고객센터를 통하여 별도의 안내 전화를 드리고 있습니다. <br>
+													 가적으로 더 궁금한 내용이 있으시면 소니 코리아 고객 지원팀(1588-0911)을 통해 문의 부탁 드립니다.
+												</p>
+												<p>
+													 다시 한번 원활하지 못한 배송으로 불편을 드려 죄송합니다. <br>
+													 보다 나은 서비스 제공을 위해 최선을 다하겠습니다. <br>
+													 감사합니다.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="Notice_col_table_row false">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 4
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>20대 대통령선거 임시 휴무일 소니스토어 온라인 배송 일정 안내</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="Notice_txt">
+													 2022-03-03
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 402
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_box">
+											<ul class="Notice_num10">
+												<li>
+												<strong>
+												2022. 3. 8(화) 오후 12시까지 주문 건 : 당일 발송 </strong>
+												</li>
+												<li>
+												<strong>
+												2022. 3. 8(화) 오후 12시 이후 주문 건 : 3. 10(목)부터 순차 발송 </strong>
+												</li>
+											</ul>
+											<p class="Notice_num10 text_etc">
+												 소니스토어 압구정은 정상 운영됩니다.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="Notice_col_table_row false">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 3
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>설 연휴 소니스토어 온라인 배송 일정 안내</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="Notice_txt">
+													 2022-01-21
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 1338
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_box">
+											<ul class="Notice_num10">
+												<li>
+												<strong>
+												2022. 1. 26(수) 오후 12시까지 주문 건 : 당일 발송 </strong>
+												</li>
+												<li>
+												<strong>
+												2022. 1. 26(수) 오후 12시 이후 주문 건 : 2. 4(금)부터 순차 발송 </strong>
+												</li>
+											</ul>
+											<p class="Notice_num10 text_etc">
+												 소니스토어 압구정 설 연휴 휴무 : 1. 31(월) ~ 2.2(수)
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="Notice_col_table_row false">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 2
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>설 연휴 소니스토어 압구정 휴무 안내</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="Notice_txt">
+													 2022-01-21
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 173
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_img_wraper">
+											<img src="../images/sub/notice_img_4.jpg" alt="공지사항사진4">
+										</div>
+									</div>
+								</div>
+								<div class="Notice_col_table_row false">
+									<div class="Notice_col_table_cell_num">
+										<p class="Notice_txt">
+											 1
+										</p>
+									</div>
+									<div class="Notice_col_table_cell_divide">
+										<div class="Notice_divide_table">
+											<div class="Notice_table_cell_notice">
+												<span>택배사 파업으로 인한 배송 지연 안내</span>
+											</div>
+											<div class="Notice_table_cell_date">
+												<p class="faq_txt">
+													 2022-01-03
+												</p>
+											</div>
+											<div class="Notice_table_cell_pv">
+												<p class="Notice_txt">
+													 1176
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="Notice_col_table_inner false">
+										<div class="Notice_acc_box">
+											<div class="Notice_cont">
+												<p>
+													 항상 소니스토어를 사랑해 주시는 고객님께 깊은 감사의 말씀을 드립니다. <br>
+													 택배사 파업으로 인한 배송 지연 공지 드립니다. <br>
+													<br>
+													 자사 택배사의 파업은 철회되었으나, 일부 지역에 한해 여전히 배송 업무가 불안정한 상태로 확인되어 일정기간 동안 배송 지연이 예상됩니다. <br>
+													 배송 관련하여 문의는 고객센터(1588-0911)로 연락 부탁드리며 배송이 원활하지 못한 점 양해 부탁드립니다. <br>
+													<br>
+													 보다 나은 서비스 제공을 위해 최선을 다하겠습니다. <br>
+													 감사합니다.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="common_all_btn notice">
+							<button>더 보기</button>
+						</div>
+					</div>
+				</div>
+				<script>
+			const Notice_col_tables = document.querySelectorAll(".Notice_col_table_row");
+			  const Notice_table_more_btn = document.querySelector(".common_all_btn.notice button");
+			  Notice_table_more_btn.addEventListener("click", () => {
+				for (let el of Notice_col_tables) {
+				  el.classList.remove("false");
+				}
+				Notice_table_more_btn.classList.add("off");
+			  })
+			  const Notice_accord = document.querySelectorAll(".Notice_col_table_body .Notice_col_table_row .Notice_col_table_cell_divide");
+			  const Notice_panels = document.querySelectorAll(".Notice_col_table_inner");
+			  Notice_accord.forEach((el, i) => {
+				el.addEventListener("click", () => {
+				  if (Notice_panels[i].classList.contains("false")) {
+					Notice_panels[i].classList.remove("false");
+				  } else {
+					Notice_panels[i].classList.add("false");
+				  }
+				})
+			  });
+		  </script>
+			</div>
+			<div class="chat_container">
+				<div class="chat_title_head">
+					 무엇이든 물어보세요.
+				</div>
+				<div class="chat_content">
+					<div class="chat_line">
+						<span class="chat_box">무엇을 도와드릴까요?</span>
+					</div>
+				</div>
+				<div class="chat_inp_box">
+					<input class="chat_box" id="chat_inp">
+					<button id="send">전송</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+<div class="foo_wrapper">
+	<div class="pc_foo_logo">
+		<img src="../images/logo/sony_logo.svg" alt="">
+	</div>
+	<div class="f_inner">
+		<div class="foo_top">
+			<div class="foo_leagal">
+				<div class="foo_leagal_1box">
+					<span>고객센터</span>
+					<span>이용약관</span>
+					<span>개인정보처리방침</span>
+				</div>
+				<div class="foo_leagaal_2box">
+					<span>이메일무단수집금지</span>
+					<span>Contact Us</span>
+				</div>
+			</div>
+		</div>
+		<div class="foo_mid">
+			<div class="foo_info">
+				<p>
+					 사업장주소 : 서울특별시 영등포구 국제금융로 10 원아이에프씨 24F
+				</p>
+				<p>
+					 대표이사 : Okura Kikuo
+				</p>
+				<p>
+					 사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜
+				</p>
+				<p>
+					 TEL : 소니코리아 고객센터 1588-0911
+				</p>
+				<p>
+					 E-MAIL : cshelp@sony.co.kr
+				</p>
+			</div>
+			<ul class="foo_social">
+				<li><img src="../images/icon/facebook.svg" alt="facebook"></li>
+				<li><img src="../images/icon/instagram.svg" alt="instagram"></li>
+				<li><img src="../images/icon/youtube.svg" alt="youtube"></li>
+				<li><img src="../images/icon/blog.svg" alt="blog"></li>
+			</ul>
+			<div class="foo_group">
+				<button>
+				Sony Family </button>
+				<div class="foo_family_inner">
+					<h4 class="foo_optgroup_label">
+					Sony Family </h4>
+					<ul class="optgroup">
+						<li class="option">
+						<a>소니코리아</a>
+						</li>
+						<li class="option">
+						<a>소니코리아 고객지원</a>
+						</li>
+						<li class="option">
+						<a>소니 알파 α</a>
+						</li>
+						<li class="option">
+						<a>소니 방송/업무용 솔루션</a>
+						</li>
+						<li class="option">
+						<a>소니 방송 업무용 솔루션 고객지원</a>
+						</li>
+					</ul>
+					<h4 class="foo_optgroup_label">
+					Family Company </h4>
+					<ul class="optgroup">
+						<li class="option">
+						<a>소니 인터렉티브 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+						<a>소니 뮤직 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+						<a>소니 ATV 뮤직 퍼블리싱 코리아</a>
+						</li>
+						<li class="option">
+						<a>소니 픽쳐스 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+						<a>소니 픽쳐스 텔레비전 코리아</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="foo_bottom">
+			<p class="foo_copy">
+				 Copyright © Sony Korea Corporation. All rights reserved.
+			</p>
+		</div>
+	</div>
+</div>
+<script>
+		const foo_btn = document.querySelector(".foo_group button");
+		const foo_btn_box = document.querySelector(".foo_family_inner");
+		foo_btn.addEventListener("click",()=> {
+			if(!foo_btn.classList.contains("on")) {
+				foo_btn.classList.add("on");
+			} else {
+				foo_btn.classList.remove("on");
+			}
+		})
+	</script>
+</footer>
+</body>
+</html>

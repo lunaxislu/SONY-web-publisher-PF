@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/logo/title_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/sub.css" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="../javascript/menu.js" defer></script>
+    <title>Sony_inquiry</title>
+    <style>
+      @media screen and (min-width: 1366px) {
+        .pc_menu_lists > li:nth-child(6) > span {
+          color: #5865f5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header_inner">
+        <h1 class="logo" onclick="location.href='index.html'">
+          <img src="../images/logo/sony_logo.svg" alt="logo" />
+        </h1>
+        <nav>
+          <ul class="pc_menu_lists">
+            <li>
+              <span onclick="location.href='product.html'">Product</span>
+            </li>
+            <li>
+              <span onclick="location.href='login.html'">Login</span>
+            </li>
+            <li>
+              <span onclick="location.href='register.html'">Join</span>
+            </li>
+            <li>
+              <span onclick="location.href='cart.html'">Order</span>
+            </li>
+
+            <li onclick="location.href='faq.html'">
+              <span>Faq & Notice</span>
+            </li>
+            <li>
+              <span onclick="location.href='inquiry.html'">Inquiry</span>
+            </li>
+            <li>
+              <span onclick="location.href='membership.html'">Membership</span>
+            </li>
+
+            <li>
+              <span onclick="location.href='gallery.html'">Gallery</span>
+            </li>
+            <li>
+              <span onclick="location.href='location.html'">Location</span>
+            </li>
+          </ul>
+          <ul class="main_menu">
+            <li class="pc log cursor">
+              <span onclick="location.href='login.html'"
+                ><img src="../images/icon/main_login.svg" alt="login"
+              /></span>
+            </li>
+            <li class="pc cursor cart_go" onclick="location.href='cart.html'">
+              <img src="../images/icon/main_cart.svg" alt="장바구니" />
+              <span class="badge"><span>0</span></span>
+            </li>
+            <li class="search cursor">
+              <img src="../images/icon/search.svg" alt="search_img" />
+              <div class="search_contents">
+                <div class="search_content">
+                  <button class="search_close">
+                    <span class="material-symbols-outlined"> close </span>
+                  </button>
+                  <form action="find_out" method="get">
+                    <div class="input_wraper">
+                      <button>
+                        <span class="material-symbols-outlined"> search </span>
+                      </button>
+                      <input
+                        type="search"
+                        placeholder="검색어를 입력해주세요."
+                      />
+                    </div>
+                  </form>
+                  <div class="suggestions_wraper">
+                    <div class="nodata">
+                      <p>최근 검색어가 없습니다.</p>
+                    </div>
+                    <div class="suggestions">
+                      <p>인기검색어</p>
+                      <div class="recommend">
+                        <ul>
+                          <li># WH-1000XM5</li>
+                          <li># ZV-1</li>
+                          <li># ILCE-7M4</li>
+                          <li># LinkBuds S</li>
+                          <li># LSPX-S3</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search_dashboard_wraper">
+                    <div class="contents">
+                      <img src="../images/main/search_img_1.png" alt="카메라" />
+                      <span class="badge_text" style="color: rgb(34, 34, 34)">
+                        EVENT
+                      </span>
+                    </div>
+                    <div class="contents">
+                      <img src="../images/main/search_img_2.png" alt="이어폰" />
+                      <span class="badge_text" style="color: rgb(34, 34, 34)">
+                        EVENT
+                      </span>
+                    </div>
+                    <div class="pc_contents">
+                      <img src="../images/main/search_img_3.png" alt="" />
+                      <span class="badge_text" style="color: rgb(255, 78, 0)">
+                        NEW
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="menu">
+              <span>
+                <div></div>
+                <div></div>
+                <div></div>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sitemap">
+        <div class="txt-box">
+          <ul class="link-menu">
+            <li class="mobile_member_login member_login">
+              <span onclick="location.href='register.html'">회원가입</span>
+            </li>
+            <li class="member_menuorder">
+              <span onclick="location.href='login.html'">주문/배송 조회</span>
+            </li>
+            <li class="mobile_member_cart cart_go">
+              <span onclick="location.href='cart.html'"
+                >장바구니
+                <span class="badge">
+                  <span>0</span>
+                </span>
+              </span>
+            </li>
+          </ul>
+          <ul class="sitemap-menu">
+            <li class="log">
+              <span onclick="location.href='login.html'">login</span>
+              <div class="line"></div>
+              <ul class="sub_menu">
+                <li>
+                  <span onclick="location.href='product.html'">product</span>
+                </li>
+                <li>
+                  <span onclick="location.href='location.html'">location</span>
+                </li>
+                <li>
+                  <span onclick="location.href='membership.html'"
+                    >Membership</span
+                  >
+                </li>
+                <li>
+                  <span onclick="location.href='gallery.html'">gallery</span>
+                </li>
+                <li>
+                  <span onclick="location.href='faq.html'">faq & notice</span>
+                </li>
+                <li>
+                  <span onclick="location.href='inquiry.html'">inquiry</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="sns">
+            <li>
+              <a>
+                <img src="../images/icon/facebook.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src="../images/icon/instagram.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src="../images/icon/youtube.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src="../images/icon/blog.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="pc_sitemap_img_box">
+          <ul class="site_img_list">
+            <li><img src="../images/main/pc_menu_img_1.jpg" alt="" /></li>
+            <li>
+              <img
+                src="../images/main/pc_menu_img_2.jpg"
+                alt=""
+                style="object-fit: initial"
+              />
+            </li>
+            <li><img src="../images/main/pc_menu_img_3.jpg" alt="" /></li>
+            <li><img src="../images/main/pc_menu_img_4.jpg" alt="" /></li>
+            <li><img src="../images/main/pc_menu_img_5.jpg" alt="" /></li>
+            <li><img src="../images/main/pc_menu_img_6.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="inquiry">
+      <div class="container">
+        <div class="inquiry_content">
+          <div class="support_head">
+            <div class="common_head">
+              <h1 class="common_head_name">구매상담 안내</h1>
+              <p class="common_head_txt inquiry">
+                소니스토어에서 필요하신 상품과 연락처를 알려주시면 담당자가
+                친절하고 신속하게 상담해 드리겠습니다.
+              </p>
+            </div>
+          </div>
+          <div class="purchase_wrap">
+            <div class="purchase_wrap_radio">
+              <div class="purchase_wrap_radio_bg">
+                <div class="radio_box">
+                  <input
+                    type="radio"
+                    name="tab_radio"
+                    class="inp_radio"
+                    id="tab1"
+                    checked
+                  />
+                  <label for="tab1" class="contentType">기업구매 상담</label>
+                </div>
+                <div class="radio_box">
+                  <input
+                    type="radio"
+                    name="tab_radio"
+                    class="inp_radio"
+                    id="tab2"
+                  />
+                  <label for="tab2" class="contentType">개인구매 상담</label>
+                </div>
+              </div>
+              <button class="purchase_btn_caution">기업구매 시 유의사항</button>
+            </div>
+            <div class="tabResult">
+              <div class="result_cont">
+                <div class="inp_wrap">
+                  <h2 class="inp_wrap_tit">개인정보 입력</h2>
+                  <div class="inp_wrap_cont">
+                    <p class="inp_wrap_amp">표시는 필수입력 정보</p>
+                    <div class="inp_wrap_form">
+                      <div class="acc_cellvat">
+                        <label for="enterprise_name"
+                          >이름(기업명) <i class="necessary"></i>
+                        </label>
+                      </div>
+                      <div class="acc_cell">
+                        <div class="acc_group">
+                          <div class="acc_inp type1">
+                            <input
+                              type="text"
+                              class="inp"
+                              id="enterprise_name"
+                              placeholder="이름(기업명)을 입력하세요"
+                              autocomplete="off"
+                              max="50"
+                            />
+                            <span class="focus_bg"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inp_wrap_form">
+                      <div class="acc_cellvat">
+                        <label for="user_email">
+                          이메일 <i class="necessary"></i>
+                        </label>
+                      </div>
+                      <div class="acc_cell">
+                        <div class="acc_group">
+                          <div class="acc_inp type1">
+                            <input
+                              type="text"
+                              class="inp"
+                              id="user_email"
+                              placeholder="예) sony@sony.co.kr"
+                              autocomplete="off"
+                              max="25"
+                            />
+                            <span class="focus_bg"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inp_wrap_form">
+                      <div class="acc_cellvat">
+                        <label for="user_number">
+                          휴대폰 번호 <i class="necessary"></i>
+                        </label>
+                      </div>
+                      <div class="acc_cell">
+                        <div class="acc_group">
+                          <div class="acc_inp type1">
+                            <input
+                              type="phone"
+                              class="inp"
+                              id="user_number"
+                              placeholder="- 없이 입력하세요."
+                              autocomplete="off"
+                              max="25"
+                            />
+                            <span class="focus_bg"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inp_wrap">
+                  <h2 class="inp_wrap_tit">상담정보 입력</h2>
+                  <div class="inp_wrap_cont">
+                    <p class="inp_wrap_amp">표시는 필수입력 정보</p>
+                    <div class="inp_wrap_form">
+                      <div class="acc_cellvat">
+                        <label for="prd_name">
+                          구입/희망 상품 <i class="necessary"></i>
+                        </label>
+                      </div>
+                      <div class="acc_cell">
+                        <div class="acc_group">
+                          <div class="acc_inp">
+                            <input
+                              type="text"
+                              class="inp"
+                              id="prd_name"
+                              placeholder="이름(기업명)을 입력하세요"
+                              autocomplete="off"
+                              max="50"
+                            />
+                            <span class="focus_bg"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inp_wrap_form">
+                      <div class="acc_cellvat">
+                        <label for="prd_num">
+                          구입 예정 수량 <i class="necessary"></i>
+                        </label>
+                      </div>
+                      <div class="acc_cell">
+                        <div class="acc_group">
+                          <div class="acc_inp">
+                            <input
+                              type="text"
+                              class="inp"
+                              id="prd_num"
+                              placeholder="예) 220대"
+                              autocomplete="off"
+                              max="50"
+                            />
+                            <span class="focus_bg"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inp_wrap_form">
+                      <div class="acc_cellvat">
+                        <label for="prd_purpose">
+                          구입 목적 <i class="necessary"></i>
+                        </label>
+                      </div>
+                      <div class="acc_cell">
+                        <div class="acc_group">
+                          <div class="acc_inp">
+                            <input
+                              type="text"
+                              class="inp"
+                              id="prd_purpose"
+                              placeholder="예) 직접 사용/납품"
+                              autocomplete="off"
+                              max="50"
+                            />
+                            <span class="focus_bg"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inp_wrap_form">
+                      <div class="acc_cellvat">
+                        <label for="prd_purpose">
+                          구매 목적 <i class="necessary"></i>
+                        </label>
+                      </div>
+                      <div class="acc_cell">
+                        <div class="acc_group">
+                          <div class="acc_inp">
+                            <input
+                              type="text"
+                              class="inp"
+                              id="prd_purpose"
+                              placeholder="예) 직접 사용/납품"
+                              autocomplete="off"
+                              max="50"
+                            />
+                            <span class="focus_bg"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inp_wrap_form">
+                      <div class="acc_cellvat">
+                        <label for="prd_qna">
+                          상품 문의 <i class="necessary"></i>
+                        </label>
+                      </div>
+                      <div class="acc_cell">
+                        <div class="acc_group">
+                          <div class="acc_inp">
+                            <input
+                              type="text"
+                              class="inp"
+                              id="prd_qna"
+                              placeholder="예) 직접 사용/납품"
+                              autocomplete="off"
+                              max="50"
+                            />
+                            <span class="focus_bg"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inp_wrap_form">
+                      <div class="acc_cellvat">
+                        <label for="requests">
+                          추가문의 및 요청 사항 <i class="necessary"></i>
+                        </label>
+                      </div>
+                      <div class="acc_cell">
+                        <div class="acc_group">
+                          <div class="acc_inp">
+                            <textarea
+                              id="requests"
+                              class="requests_cont"
+                              cols="50"
+                              rows="5"
+                              maxlength="1000"
+                              onkeyup="charCount(this)"
+                            ></textarea>
+                            <span class="focus_bg"></span>
+                          </div>
+                          <div class="byte_count">
+                            <div class="file_upload_wraper">
+                              <input type="file" />
+                              <p>
+                                5MB이하의 이미지 파일(JPG, PNG, GIF) <br />
+                                1개 첨부하실 수 있습니다.
+                              </p>
+                            </div>
+                            <div class="count_number">
+                              <strong class="current">0</strong>
+                              /1,000자
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="captcha_area">
+                  <div class="marco_chk">
+                    <div>
+                      <iframe
+                        title="reCAPTCHA"
+                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeNjQATAAAAAEi7lxcR-evpkCMR1FEjLKvwtYvr&amp;co=aHR0cHM6Ly9zdG9yZS5zb255LmNvLmtyOjQ0Mw..&amp;hl=ko&amp;type=image&amp;v=Km9gKuG06He-isPsP6saG8cn&amp;theme=light&amp;size=normal&amp;badge=bottomright&amp;cb=oe2ghxxod1nm"
+                        width="304"
+                        height="78"
+                        role="presentation"
+                        name="a-2e15euclw5xj"
+                        frameborder="0"
+                        scrolling="no"
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                      >
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list_dot">
+                  <li>
+                    일반 소비자의 제품 구매 및 A/S 관련 문의는 소니코리아
+                    고객지원센터로 문의해 주시기 바랍니다. (고객지원센터 :
+                    1588-0911)
+                  </li>
+                  <li>
+                    B2B 기업체 특판 구매는 1)모델 2) 수량 3)납기일 4) 납품처 5)
+                    제품 용도 의 정보가 필요합니다. 위의 정보를 포함한 메일을
+                    송부 부탁 드립니다.
+                  </li>
+                  <li>
+                    방송용 장비, 프로젝터, 반도체, 기타 부품 소재 관련 문의는
+                    대표전화로 문의해 주시기 바랍니다. (대표전화 : 02-6001-4000)
+                  </li>
+                </ul>
+              </div>
+              <div class="result_btn">
+                <button
+                  class="result_negative"
+                  type="button"
+                  style="cursor: initial"
+                >
+                  취소
+                </button>
+                <button
+                  class="result_positive"
+                  type="button"
+                  style="cursor: initial"
+                >
+                  확인
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const txtBox = document.querySelector(".requests_cont");
+      const current_count = document.getElementsByClassName("current")[0];
+
+      function charCount(textarea) {
+        let number = textarea.value.length;
+        current_count.textContent = number;
+      }
+    </script>
+    <footer>
+      <div class="foo_wrapper">
+        <div class="pc_foo_logo">
+          <img src="../images/logo/sony_logo.svg" alt="" />
+        </div>
+        <div class="f_inner">
+          <div class="foo_top">
+            <div class="foo_leagal">
+              <div class="foo_leagal_1box">
+                <span>고객센터</span>
+                <span>이용약관</span>
+                <span>개인정보처리방침</span>
+              </div>
+              <div class="foo_leagaal_2box">
+                <span>이메일무단수집금지</span>
+                <span>Contact Us</span>
+              </div>
+            </div>
+          </div>
+          <div class="foo_mid">
+            <div class="foo_info">
+              <p>
+                사업장주소 : 서울특별시 영등포구 국제금융로 10 원아이에프씨 24F
+              </p>
+              <p>대표이사 : Okura Kikuo</p>
+              <p>
+                사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038
+                소니코리아㈜
+              </p>
+              <p>TEL : 소니코리아 고객센터 1588-0911</p>
+              <p>E-MAIL : cshelp@sony.co.kr</p>
+            </div>
+            <ul class="foo_social">
+              <li><img src="../images/icon/facebook.svg" alt="facebook" /></li>
+              <li>
+                <img src="../images/icon/instagram.svg" alt="instagram" />
+              </li>
+              <li><img src="../images/icon/youtube.svg" alt="youtube" /></li>
+              <li><img src="../images/icon/blog.svg" alt="blog" /></li>
+            </ul>
+            <div class="foo_group">
+              <button>Sony Family</button>
+              <div class="foo_family_inner">
+                <h4 class="foo_optgroup_label">Sony Family</h4>
+                <ul class="optgroup">
+                  <li class="option">
+                    <a>소니코리아</a>
+                  </li>
+                  <li class="option">
+                    <a>소니코리아 고객지원</a>
+                  </li>
+                  <li class="option">
+                    <a>소니 알파 α</a>
+                  </li>
+                  <li class="option">
+                    <a>소니 방송/업무용 솔루션</a>
+                  </li>
+                  <li class="option">
+                    <a>소니 방송 업무용 솔루션 고객지원</a>
+                  </li>
+                </ul>
+                <h4 class="foo_optgroup_label">Family Company</h4>
+                <ul class="optgroup">
+                  <li class="option">
+                    <a>소니 인터렉티브 엔터테인먼트 코리아</a>
+                  </li>
+                  <li class="option">
+                    <a>소니 뮤직 엔터테인먼트 코리아</a>
+                  </li>
+                  <li class="option">
+                    <a>소니 ATV 뮤직 퍼블리싱 코리아</a>
+                  </li>
+                  <li class="option">
+                    <a>소니 픽쳐스 엔터테인먼트 코리아</a>
+                  </li>
+                  <li class="option">
+                    <a>소니 픽쳐스 텔레비전 코리아</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="foo_bottom">
+            <p class="foo_copy">
+              Copyright © Sony Korea Corporation. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script>
+        const foo_btn = document.querySelector(".foo_group button");
+        const foo_btn_box = document.querySelector(".foo_family_inner");
+        foo_btn.addEventListener("click", () => {
+          if (!foo_btn.classList.contains("on")) {
+            foo_btn.classList.add("on");
+          } else {
+            foo_btn.classList.remove("on");
+          }
+        });
+      </script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="../images/logo/title_logo.png" type="image/x-icon">
+<link rel="stylesheet" href="../css/location.css"/>
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script src="../javascript/menu.js" defer></script>
+<script src="../javascript/location.js" defer></script>
+<title>Location</title>
+</head>
+<body>
+	<header>
+		<div class="header_inner">
+		<h1 class="logo" onclick="location.href='index.html'">
+		<img src="../images/logo/sony_logo.svg" alt="logo">
+		</h1>
+		<nav>
+		<ul class="pc_menu_lists">
+			<li>
+				<span onclick="location.href='product.html'">Product</span>
+				</li>
+			<li>
+				<span onclick="location.href='login.html'">Login</span>
+			</li>
+			<li>
+				<span onclick="location.href='register.html'">Join</span>
+			</li>
+			<li>
+				<span onclick="location.href='cart.html'">Order</span>
+			</li>
+
+			<li onclick="location.href='faq.html'">
+			<span>Faq & Notice</span>
+			</li>
+			<li>
+				<span onclick="location.href='inquiry.html'">Inquiry</span>
+				</li>
+			<li>
+				<span onclick="location.href='membership.html'">Membership</span>
+				</li>
+
+				<li>
+					<span onclick="location.href='gallery.html'">Gallery</span>
+					</li>
+			<li>
+			<span onclick="location.href='location.html'">Location</span>
+			</li>
+		</ul>
+		<ul class="main_menu">
+			<li class="pc log cursor">
+			<span
+			onclick="location.href='login.html'"><img src="../images/icon/main_login.svg" alt="login"></span>
+			</li>
+			<li class="pc cursor cart_go" onclick="location.href='cart.html'">
+			<img src="../images/icon/main_cart.svg" alt="장바구니">
+			<span class="badge"><span>0</span></span>
+			</li>
+			<li class="search cursor">
+			<img src="../images/icon/search.svg" alt="search_img">
+			<div class="search_contents">
+				<div class="search_content">
+					<button class="search_close">
+					<span class="material-symbols-outlined"> close </span>
+					</button>
+					<form action="find_out" method="get">
+						<div class="input_wraper">
+							<button>
+							<span class="material-symbols-outlined"> search </span>
+							</button>
+							<input type="search" placeholder="검색어를 입력해주세요.">
+						</div>
+					</form>
+					<div class="suggestions_wraper">
+						<div class="nodata">
+							<p>
+									최근 검색어가 없습니다.
+							</p>
+						</div>
+						<div class="suggestions">
+							<p>
+									인기검색어
+							</p>
+							<div class="recommend">
+								<ul>
+									<li># WH-1000XM5</li>
+									<li># ZV-1</li>
+									<li># ILCE-7M4</li>
+									<li># LinkBuds S</li>
+									<li># LSPX-S3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="search_dashboard_wraper">
+						<div class="contents">
+							<img src="../images/main/search_img_1.png" alt="카메라">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="contents">
+							<img src="../images/main/search_img_2.png" alt="이어폰">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="pc_contents">
+							<img src="../images/main/search_img_3.png" alt="">
+							<span class="badge_text" style="color: rgb(255, 78, 0);">
+							NEW </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>
+			<li id="menu">
+			<span>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+			</span>
+			</li>
+		</ul>
+		</nav>
+		</div>
+		<div class="sitemap">
+		<div class="txt-box">
+			<ul class="link-menu">
+				<li class="mobile_member_login member_login">
+				<span onclick="location.href='register.html'">회원가입</span>
+				</li>
+				<li class="member_menuorder">
+				<span onclick="location.href='login.html'">주문/배송 조회</span>
+				</li>
+				<li class="mobile_member_cart cart_go">
+				<span onclick="location.href='cart.html'">장바구니 <span class="badge">
+				<span>0</span>
+				</span>
+				</span>
+				</li>
+			</ul>
+			<ul class="sitemap-menu">
+				<li class="log">
+				<span onclick="location.href='login.html'">login</span>
+				<div class="line">
+				</div>
+				<ul class="sub_menu">
+					<li>
+					<span onclick="location.href='product.html'">product</span>
+					</li>
+					<li>
+					<span onclick="location.href='location.html'">location</span>
+					</li>
+					<li>
+					<span onclick="location.href='membership.html'">Membership</span>
+					</li>
+					<li>
+					<span onclick="location.href='gallery.html'">gallery</span>
+					</li>
+					<li>
+					<span onclick="location.href='faq.html'">faq & notice</span>
+					</li>
+					<li>
+					<span onclick="location.href='inquiry.html'">inquiry</span>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			<ul class="sns">
+				<li>
+				<a>
+				<img src="../images/icon/facebook.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/instagram.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/youtube.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/blog.svg" alt="">
+				</a>
+				</li>
+			</ul>
+		</div>
+		<div class="pc_sitemap_img_box">
+			<ul class="site_img_list">
+				<li><img src="../images/main/pc_menu_img_1.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_2.jpg" alt="" style="object-fit:initial;"></li>
+				<li><img src="../images/main/pc_menu_img_3.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_4.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_5.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_6.jpg" alt=""></li>
+			</ul>
+		</div>
+		</div>
+		</header>
+<div class="location">
+	<div class="container">
+		<div class="location_content">
+			<div class="store_info_wrap">
+				<div class="stor_info_wrap_slider swiper-container">
+					<div class="swiper-container swiper-wrapper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="bg_img">
+									<img src="../images/location/location_slide_img_1.jpg" alt="압구정직영점이미지1번"/>
+									<span class="bg"></span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="bg_img">
+									<img src="../images/location/location_slide_img_2.jpg" alt="압구정직영점이미지2번"/>
+									<span class="bg"></span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="bg_img">
+									<img src="../images/location/location_slide_img_3.jpg" alt="압구정직영점이미지3번"/>
+									<span class="bg"></span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="bg_img">
+									<img src="../images/location/location_slide_img_4.jpg" alt="압구정직영점이미지4번"/>
+									<span class="bg"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="store_info_wrap_txtbox">
+					<strong class="info_txt">직영점 안내</strong>
+					<h1 class="info_store_title">소니스토어 압구정</h1>
+					<p class="info_desc">
+						 소니 전 제품을 직접 체험하고, <br/>
+						컨설팅도 받아 볼 수 있는 소니스토어 직영점을 방문해 보세요!
+					</p>
+				</div>
+				<div class="store_info_wrap_guidebox">
+					<div class="guidebox_slider swiper-container">
+						<div class="swiper-container swiper-wrapper mySwiper2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide box">
+									<span class="box_tit">매장 운영시간</span>
+									<div class="box_time">
+										<em class="everyday">매일</em>
+										<span class="time">11:00 ~ 20:00</span>
+									</div>
+									<p class="box_desc">
+										(설, 추석명절 휴무)
+									</p>
+								</div>
+								<div class="swiper-slide box tel">
+									<span class="box_tit">매장 전화번호</span>
+									<div class="box_time">
+										<span class="code">02)</span>
+										<span class="time">515-7946</span>
+									</div>
+								</div>
+								<div class="swiper-slide box">
+									<span class="box_tit">고객센터 운영시간</span>
+									<div class="box_day">
+										<div class="weekday">
+											<p class="weekday_day">
+												월-금요일
+											</p>
+											<p class="weekday_time">
+												09:00 ~ 18:00
+											</p>
+										</div>
+									</div>
+									<p class="box_desc">
+										(토/일요일, 공휴일 휴무)
+									</p>
+								</div>
+								<div class="swiper-slide box search">
+									<span>
+									<i class="icon"></i>
+									<p class="box_desc">
+										AS 센터 찾기
+									</p>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="way_box">
+				<div class="way_box_inner">
+					<div class="way_box_addr">
+						<strong class="way_box_addr_tit"> 오시는 길 </strong>
+						<p class="way_box_addr_txt">
+							 서울특별시 강남구 선릉로 801 <span class="block">(신사동 배강빌딩)</span>
+						</p>
+						<button type="button" class="map_open_btn">지도접기</button>
+					</div>
+					<div class="way_box_transp pc">
+						<ul class="route">
+							<li class="route_subway">
+							<strong class="route_tit">지하철</strong>
+							<p class="route_method">
+								<span class="color_subway1"> 7호선 </span>
+								강남구청 3-1번 출구 / <span class="color_subway2"> 분당선 </span>
+								압구정로데오역 5번 출구
+							</p>
+							</li>
+							<li class="route_bus">
+							<strong class="route_tit">버스</strong>
+							<p class="route_method">
+								<span class="color_bus1"> 간선 </span>
+								145, 301, 472 / <span class="color_bus2">지선</span>
+								4412, 3011
+							</p>
+							</li>
+							<li class="route_car">
+							<strong class="route_tit">승용차</strong>
+							<p class="route_method">
+								도산대로 학동사거리 배강빌딩 1층
+							</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="map_wrapper">
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7207.05386607274!2d127.0395640847168!3d37.523221362429595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b11ba16a3b514d5!2z7IaM64uIIOyKpO2GoOyWtCDslZXqtazsoJXsoJA!5e0!3m2!1sko!2skr!4v1668884548750!5m2!1sko!2skr" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+					</div>
+				</div>
+				<div class="way_box_transp mobile">
+					<ul class="route">
+						<li class="route_subway">
+						<strong class="route_tit">지하철</strong>
+						<p class="route_method">
+							<span class="color_subway1">7호선</span> 강남구청 3-1번 출구 <span class="br"><span class="color_subway2">분당선</span> 압구정로데오역 5번 출구</span>
+						</p>
+						</li>
+						<li class="route_bus">
+						<strong class="route_tit">버스</strong>
+						<p class="route_method">
+							<span class="color_bus1">간선</span> 145, 301, 472 <span class="br"><span class="color_bus2">지선</span> 4412, 3011</span>
+						</p>
+						</li>
+						<li class="route_car">
+						<strong class="route_tit">승용차</strong>
+						<p class="route_method">
+							 도산대로 학동사거리 <span class="br">배강빌딩 1층</span>
+						</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="foo_wrapper">
+	<div class="pc_foo_logo">
+		<img src="../images/logo/sony_logo.svg" alt="">
+	</div>
+	<div class="f_inner">
+		<div class="foo_top">
+			<div class="foo_leagal">
+				<div class="foo_leagal_1box">
+					<span>고객센터</span>
+					<span>이용약관</span>
+					<span>개인정보처리방침</span>
+				</div>
+				<div class="foo_leagaal_2box">
+					<span>이메일무단수집금지</span>
+					<span>Contact Us</span>
+				</div>
+			</div>
+		</div>
+		<div class="foo_mid">
+			<div class="foo_info">
+				<p>
+					사업장주소 : 서울특별시 영등포구 국제금융로 10 원아이에프씨 24F
+				</p>
+				<p>
+					대표이사 : Okura Kikuo
+				</p>
+				<p>
+					사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜
+				</p>
+				<p>
+					TEL : 소니코리아 고객센터 1588-0911
+				</p>
+				<p>
+					E-MAIL : cshelp@sony.co.kr
+				</p>
+			</div>
+			<ul class="foo_social">
+				<li><img src="../images/icon/facebook.svg" alt="facebook"></li>
+				<li><img src="../images/icon/instagram.svg" alt="instagram"></li>
+				<li><img src="../images/icon/youtube.svg" alt="youtube"></li>
+				<li><img src="../images/icon/blog.svg" alt="blog"></li>
+			</ul>
+			<div class="foo_group">
+				<button>
+					Sony Family
+				</button>
+				<div class="foo_family_inner">
+					<h4 class="foo_optgroup_label">
+						Sony Family
+					</h4>
+					<ul class="optgroup">
+						<li class="option">
+							<a>소니코리아</a>
+						</li>
+						<li class="option">
+							<a>소니코리아 고객지원</a>
+						</li>
+						<li class="option">
+							<a>소니 알파 α</a>
+						</li>
+						<li class="option">
+							<a>소니 방송/업무용 솔루션</a>
+						</li>
+						<li class="option">
+							<a>소니 방송 업무용 솔루션 고객지원</a>
+						</li>
+					</ul>
+					<h4 class="foo_optgroup_label">
+						Family Company
+					</h4>
+					<ul class="optgroup">
+						<li class="option">
+							<a>소니 인터렉티브 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 뮤직 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 ATV 뮤직 퍼블리싱 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 픽쳐스 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 픽쳐스 텔레비전 코리아</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="foo_bottom">
+			<p class="foo_copy">
+				Copyright © Sony Korea Corporation. All rights reserved.
+			</p>
+		</div>
+	</div>
+</div>
+	<script>
+		const foo_btn = document.querySelector(".foo_group button");
+		const foo_btn_box = document.querySelector(".foo_family_inner");
+		foo_btn.addEventListener("click",()=> {
+			if(!foo_btn.classList.contains("on")) {
+				foo_btn.classList.add("on");
+			} else {
+				foo_btn.classList.remove("on");
+			}
+		})
+	</script>
+</footer>
+</body>
+</html>

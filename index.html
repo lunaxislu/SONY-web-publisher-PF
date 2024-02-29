@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../images/logo/title_logo.png" type="image/x-icon">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script src="../javascript/menu.js" defer></script>
+<script src="../javascript/script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<title>메인</title>
+</head>
+<body>
+	<header>
+		<div class="header_inner">
+		<h1 class="logo" onclick="location.href='index.html'">
+		<img src="../images/logo/sony_logo.svg" alt="logo">
+		</h1>
+		<nav>
+		<ul class="pc_menu_lists">
+			<li>
+				<span onclick="location.href='product.html'">Product</span>
+				</li>
+			<li>
+				<span onclick="location.href='login.html'">Login</span>
+			</li>
+			<li>
+				<span onclick="location.href='register.html'">Join</span>
+			</li>
+			<li>
+				<span onclick="location.href='cart.html'">Order</span>
+			</li>
+
+			<li onclick="location.href='faq.html'">
+			<span>Faq & Notice</span>
+			</li>
+			<li>
+				<span onclick="location.href='inquiry.html'">Inquiry</span>
+				</li>
+			<li>
+				<span onclick="location.href='membership.html'">Membership</span>
+				</li>
+
+				<li>
+					<span onclick="location.href='gallery.html'">Gallery</span>
+					</li>
+			<li>
+			<span onclick="location.href='location.html'">Location</span>
+			</li>
+		</ul>
+		<ul class="main_menu">
+			<li class="pc log cursor">
+			<span
+			onclick="location.href='login.html'"><img src="../images/icon/main_login.svg" alt="login"></span>
+			</li>
+			<li class="pc cursor cart_go" onclick="location.href='cart.html'">
+			<img src="../images/icon/main_cart.svg" alt="장바구니">
+			<span class="badge"><span>0</span></span>
+			</li>
+			<li class="search cursor">
+			<img src="../images/icon/search.svg" alt="search_img">
+			<div class="search_contents">
+				<div class="search_content">
+					<button class="search_close">
+					<span class="material-symbols-outlined"> close </span>
+					</button>
+					<form action="find_out" method="get">
+						<div class="input_wraper">
+							<button>
+							<span class="material-symbols-outlined"> search </span>
+							</button>
+							<input type="search" placeholder="검색어를 입력해주세요.">
+						</div>
+					</form>
+					<div class="suggestions_wraper">
+						<div class="nodata">
+							<p>
+									최근 검색어가 없습니다.
+							</p>
+						</div>
+						<div class="suggestions">
+							<p>
+									인기검색어
+							</p>
+							<div class="recommend">
+								<ul>
+									<li># WH-1000XM5</li>
+									<li># ZV-1</li>
+									<li># ILCE-7M4</li>
+									<li># LinkBuds S</li>
+									<li># LSPX-S3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="search_dashboard_wraper">
+						<div class="contents">
+							<img src="../images/main/search_img_1.png" alt="카메라">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="contents">
+							<img src="../images/main/search_img_2.png" alt="이어폰">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="pc_contents">
+							<img src="../images/main/search_img_3.png" alt="">
+							<span class="badge_text" style="color: rgb(255, 78, 0);">
+							NEW </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>
+			<li id="menu">
+			<span>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+			</span>
+			</li>
+		</ul>
+		</nav>
+		</div>
+		<div class="sitemap">
+		<div class="txt-box">
+			<ul class="link-menu">
+				<li class="mobile_member_login member_login">
+				<span onclick="location.href='register.html'">회원가입</span>
+				</li>
+				<li class="member_menuorder">
+				<span onclick="location.href='login.html'">주문/배송 조회</span>
+				</li>
+				<li class="mobile_member_cart cart_go">
+				<span onclick="location.href='cart.html'">장바구니 <span class="badge">
+				<span>0</span>
+				</span>
+				</span>
+				</li>
+			</ul>
+			<ul class="sitemap-menu">
+				<li class="log">
+				<span onclick="location.href='login.html'">login</span>
+				<div class="line">
+				</div>
+				<ul class="sub_menu">
+					<li>
+					<span onclick="location.href='product.html'">product</span>
+					</li>
+					<li>
+					<span onclick="location.href='location.html'">location</span>
+					</li>
+					<li>
+					<span onclick="location.href='membership.html'">Membership</span>
+					</li>
+					<li>
+					<span onclick="location.href='gallery.html'">gallery</span>
+					</li>
+					<li>
+					<span onclick="location.href='faq.html'">faq & notice</span>
+					</li>
+					<li>
+					<span onclick="location.href='inquiry.html'">inquiry</span>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			<ul class="sns">
+				<li>
+				<a>
+				<img src="../images/icon/facebook.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/instagram.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/youtube.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/blog.svg" alt="">
+				</a>
+				</li>
+			</ul>
+		</div>
+		<div class="pc_sitemap_img_box">
+			<ul class="site_img_list">
+				<li><img src="../images/main/pc_menu_img_1.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_2.jpg" alt="" style="object-fit:initial;"></li>
+				<li><img src="../images/main/pc_menu_img_3.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_4.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_5.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_6.jpg" alt=""></li>
+			</ul>
+		</div>
+		</div>
+		</header>
+
+<main>
+	<div class="pc scroll_down">
+		<div class="scroll_txt">
+			scroll down
+		</div>
+		<div class="scroll_bg">
+		</div>
+		<div class="scroll_box">
+		</div>
+	</div>
+	<div class="mainSlide swiper-container mySwiper">
+		<div class="mS swiper-wrapper">
+			<div class="mS swiper-slide">
+				<video autoplay loop muted>
+				<source src="https://image.sony.co.kr/newStore/video/220428_a1_60sec.mp4">
+				<!-- <source src="../images/video/main_video.mp4"> -->
+				</video>
+				<div class="kv_slide">
+					<div class="mS_txt">
+						<div class="mS_title">
+							<span class="copy-0">
+							<span>The</span>
+							</span>
+							<span class="copy-1">
+							<span>One</span>
+							</span>
+						</div>
+						<div class="mS_title">
+							<span class="copy-2"><span>α1</span></span>
+						</div>
+					</div>
+					<span class="kv_product">
+					<span>작품을 완성하는 플래그십 α1</span>
+					</span>
+					<a href="#" class="kv_link">
+					<span>자세히 보기</span>
+					</a>
+				</div>
+			</div>
+			<div class="mS swiper-slide">
+				<div class="ms_img_wraper">
+					<img src="../images/main/mobile_main_img.jpg" alt="main_img_mobile" class="mobile">
+					<img src="../images/main/pc_main_img.jpg" alt="메인 이미지" class="pc">
+				</div>
+				<div class="kv_slide">
+					<div class="mS_txt">
+						<div class="mS_title">
+							<span class="copy-0">
+							<span>나를</span>
+							</span>
+							<span class="copy-1">
+							<span>담는</span>
+							</span>
+						</div>
+						<div class="mS_title">
+							<span class="copy-2"><span>브이로그 카메라 <br>
+							 ZV-1F</span></span>
+						</div>
+					</div>
+					<span class="kv_product">
+					<span>초보 크리에이터도 프로 크리에이터 처럼</span>
+					</span>
+					<a href="#" class="kv_link">
+					<span>자세히 보기</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mS swiper-pagination-current">
+	</div>
+</main>
+
+<article class="main_article1">
+	<section class="wraper">
+		<div class="main_article1_container_box">
+			<div class="main_article1_wrap">
+				<h3 class="article_title">Intro</h3>
+				<h2>we endeavor to create Kando (emotion)</h2>
+				
+				<p>소니는 '사운드(sound)'와 '소닉(sonic)'의 어원인 라틴어의 '소누스(sonus)'에 '작은 아기'라는 의미의 'sonny'가 합해져서 지어진 이름이다. 여기에 '회사는 작지만 그보다 발랄하고 젊은 사람들이 모여 있다'는 뜻이 담겨있는 Sony. 어떤 나라에서도 보통으로 발음할 수 있고 어디에 가도 읽는 법이 변합없는, Sony라는 이름은 이렇게 탄생했다.</p>
+				<p>Sony는 기술의 힘을 통해 사람들의 삶을 풍요롭게 하고자 하는 꿈과 열망을 가진 창업자들에게서 태어났습니다.
+					우리는 계속해서 "감동을 불러일으키는 기술"을 추구하고 사람들에게 더 가까이 다가가 그들의 동기를 이해하고
+					그들의 호기심을 자극하고 충족시켜 창업자의 꿈을 실현해 나갈 것입니다.</p>
+					<p>
+						" 창의력과 기술의 힘으로 감성으로 세상을 채우다"는 소니의 목적을 바탕으로
+					Kando(감성)를 만들기 위해 노력합니다. 오늘날 소니 엔지니어들은 이 꿈을 공유하고 있습니다."
+					<br>
+					Kando로 세상을 채우려면 파트너와 연결하고 새로운 가치를 공동으로 만드는 것이 필수적이며
+					다양한 분야의 크리에이터, 학계 및 기업과 함께 다양한 활동을 추진하고 있습니다.
+					</p>
+
+					<ul>
+						<li>
+							<div class="main_article1_bg_img1"></div>
+						</li>
+						<li>
+							<div class="main_article1_bg_img2"></div>
+						</li>
+						<li>
+							<div class="main_article1_bg_img3"></div>
+						</li>
+						<li>
+							<div class="main_article1_bg_img4"></div>
+						</li>
+					</ul>
+			</div>
+		</div>
+		<div class="main_article1_hero_box">
+			<div class="main_article1_hero_bg"></div>
+			<div class="main_article1_wrap">
+				<h2 class="main_article1_hero_box_title">
+				<span>
+					PRODUCT
+					<br>
+					super-difference
+					<br>
+					BEYOUND
+				</span>
+				</h2>
+				<p class="main_article1_hero_box_txt">
+					<span class="main_a1_hero_box_view">
+						소니는 "전에 해보지 못한 일을 해내겠다"는 호기심과 상상력을 포용하는 디자인 비전을 가지고 있으며, 우리의 아이디어를 독특한 본질로 다듬는 데 성실한 헌신과 끈질긴 관심으로 모든 프로젝트에 임하고 있습니다.오늘날 이 그룹의 기여는 순수한 제품 디자인을 넘어 사용자 경험, 커뮤니케이션, 엔터테인먼트 등을 포함한 광범위한 디자인 활동으로 확장되었습니다. 우리는 창의성과 기술의 융합을 통해 가치의 '새로운 표준'을 창조하면서 보다 풍부한 경험과 보다 편안한 라이프스타일을 실현하기 위해 전 세계 사람들과 함께 디자인의 가능성을 지속적으로 탐구하고 있습니다. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				</span>                                 
+				</p>
+				<p class="main_article1_hero_box_txt">
+					<span class="main_a1_hero_box_txt_fixed">
+					We has always been at the forefront of design and became one of the first companies to create an in-house creative studio. Since its inception in 1961, Sony Design has forged its reputation as a leading and award-winning global design team.
+				</span>
+					<span class="hero_box_txt_ko main_a1_hero_box_view">
+						우리는 항상 디자인의 선두에 서서 사내 크리에이티브 스튜디오를 만든 최초의 회사 중 하나가 되었습니다. 1961년 설립된 이래로 소니 디자인은 선도적이고 수상 경력이 있는 글로벌 디자인 팀으로 명성을 쌓아왔습니다.
+					</span>
+				</p>
+				<p class="main_article1_hero_box_txt">
+					<span class="main_a1_hero_box_txt_fixed">
+					Through the power of design, we envision new paradigms,give meaning to ideas, and enagage globally-a process that resonates with a diversity of values.
+					</span>
+					<span class="hero_box_txt_ko main_a1_hero_box_view">
+						디자인과 기술의 힘을 통해, 우리는 새로운 패러다임을 구상하고, 아이디어에 의미를 부여하며, 전세계적으로 관여한다. 이 과정은 다양한 가치와 공명하는 과정이다.
+					</span>
+				
+				</p>
+			</div>
+		</div>
+	</section>
+</article>
+
+<article class="main_concept">
+	<section class="wraper">
+		<div class="main_concept_top">
+			<div class="main_cp_top_txt_01">
+				<h2>Alpha 7C</h2>
+				<h4>상상을 담는 카메라*</h4>
+				<p>Becomes a reality</p>
+				<span>
+					<button type="button">
+						자세히 보기
+					</button>
+				</span>
+			</div>
+			<div class="main_cp_top_txt_02">
+				<h2>α1</h2>
+				<h4>찰나의 순간을 포착하는 카메라*</h4>
+				<p>To the smallest detail</p>
+				<span>
+					<button type="button">
+						자세히 보기
+					</button>
+				</span>
+			</div>
+		</div>
+		<div class="main_concept_bottom">
+			<div class="main_cp_bt_txt_01">
+				<h2>camera</h2>
+				<p class="main_concep_txt_fixed">Beyond Customer Expectation</p>
+				<span class="main_cp_bt_txt">
+					우리는 고객의 요구를 충족하는데 머무르지 않고, 고객의 기대를 뛰어넘는 가치를 창출하려 합니다.
+					세계의 선두에서 * 풀프레임 <strong>61.0MP</strong> 이면조사형 <strong>Exmor R™ CMOS </strong> 이미지 센서 탑재. 고해상도와 넓은 다이내믹 레인지로 놀라운 이미지 품질을 제공합니다.
+				</span>
+			</div>
+			<div class="main_cp_bt_imgwraper">
+				<img src="../images/main/main_concept_txt2_img.jpg" alt="cameras">
+			</div>
+		</div>
+	</section>
+</article>
+<!-- <article class="main_subsidiary">
+	<section class="wraper">
+		<div class="subsidiary_title_container">
+			<h2>camera</h2>
+			<p class="main_a2_txt_fixed">Beyond Customer Expectation</p>
+			<span class="main_a2_view">
+				우리는 고객의 요구를 충족하는데 머무르지 않고, 고객의 기대를 뛰어넘는 가치를 창출하려 합니다.
+				<br>
+				<br>
+				세계의 선두에서 * 풀프레임 <strong>61.0MP</strong> 이면조사형 <strong>Exmor R™ CMOS </strong> 이미지 센서 탑재. 고해상도와 넓은 다이내믹 레인지로 놀라운 이미지 품질을 제공합니다.
+			</span>
+		</div>
+		<div class="subsidiary_img_container">
+			
+			   <img src="../images/main_article2_img.jpg" alt="package_camera">
+			
+		</div>
+	</section>
+</article> -->
+
+<article class="main_technoloy">
+	<section class="wraper">
+		<div class="main_technoloy_title">
+			<h2>technoloy</h2>
+			<p class="main_tech_txt_fixed">
+				 Beyond the Future Innovation
+			</p>
+		</div>
+		<ul class="main_technoloy_container">
+			<li class="main_tech_lense">
+				<div class="main_tech_img_wraper">
+					<img src="../images/main/main_tech_img_1.png" alt="star_background">
+					<img src="../images/main/main_tech_img_2.png" alt="camera">
+				</div>
+				<div class="main_tech_img_txt">
+					<div class="main_tech_img_title">
+						<strong>Alpha α 7C</strong>
+					</div>
+				<em>BE THE ULTIMATE</em>
+					<p>
+						<span class="main_tech_img_txt_en">
+						<span>	The precision of the new eXtreme Aspirical (XA) lens, which rejects mediocrity in visual appeal, reaches 0.01 microns, captures truthfulness and beauty in every image.</span></span>
+					<span class="main_tech_img_txt_ko">	
+					<span>	시각적 매력에 있어 평범함을 거부하는 새로운 <strong> XA (eXtreme Aspherical)</strong> 렌즈의 <strong>0.01</strong>미크론에 이르는 정밀도는 모든 이미지에 진실함과 아름다움을 담아냅니다.
+					</span>
+				</span>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</section>
+</article>
+
+
+<article class="performance">
+	<section class="wraper">
+			<h2>performance</h2>
+			<p class="main_pf_txt_fixed">
+				 SEE WHAT SMALL CAN DO
+			</p>
+			<div class="main_perfomance_bg_wraper">
+			<img src="../images/main/main_perfomance_bg_img.png" alt="" class="main_perfomance_bg on">
+			<video src="http://image.sony.co.kr/sonyalpha/gmaster/videos/tech-1-m.mp4" class="main_perfomance_bg video mobile" autoplay muted loop></video>
+			<video src="https://image.sony.co.kr/sonyalpha/gmaster/videos/tech-2-m.mp4" class="main_perfomance_bg video mobile" autoplay muted loop></video>
+			<video src="https://image.sony.co.kr/sonyalpha/gmaster/videos/tech-3-m.mp4" class="main_perfomance_bg video mobile" autoplay muted loop></video>
+			<video src="http://image.sony.co.kr/sonyalpha/gmaster/videos/tech-1.mp4" class="main_perfomance_bg video pc" autoplay muted loop></video>
+			<video src="https://image.sony.co.kr/sonyalpha/gmaster/videos/tech-2.mp4" class="main_perfomance_bg video pc" autoplay muted loop></video>
+			<video src="https://image.sony.co.kr/sonyalpha/gmaster/videos/tech-3.mp4" class="main_perfomance_bg video pc" autoplay muted loop></video>
+
+			<!-- 비디오 정지일 때 사용 -->
+			<!-- <video src="../images/video/main_perfomance_bg_mobile_video_1.mp3" autoplay muted loop></video>
+			<video src="../images/video/main_perfomance_bg_mobile_video_2.mp3" autoplay muted loop></video>
+			<video src="../images/video/main_perfomance_bg_mobile_video_3.mp3" autoplay muted loop></video>
+			<video src="../images/video/main_perfomance_bg_pc_video_1.mp3"></video>
+			<video src="../images/video/main_perfomance_bg_pc_video_2.mp3" autoplay muted loop></video>
+			<video src="../images/video/main_perfomance_bg_pc_video_3.mp3" autoplay muted loop></video> -->
+			</div>
+			<div class="pc_main_pf_line"></div>
+			<div class="pc_main_pf_line pc_pf_line2"></div>
+			<ul class="main_pf_view_container">
+				<li>
+					<div class="main_pf_view_list">
+						<strong class="view_list_title">
+							Resolution <br class="mobile"> 해상력
+						</strong>
+						<div class="main_pf_view_line"></div>
+						<span class="view_list_img_box">
+							<img src="../images/icon/main_pf_view_icon_1.png" alt="해상력">
+						</span>
+					</div>
+					<div class="main_pf_view_sub_list">
+						<strong class="view_list_title">
+							Resolution <br class="mobile"> 해상력
+						</strong>
+						<div class="main_pf_view_line"></div>
+						<p class="view_sub_txt">이미지 주변부까지 선명하게 표현하는 고 해상도 렌즈</p>
+					</div>
+				</li>
+				<li>
+					<div class="main_pf_view_list">
+						<strong class="view_list_title">
+							Bokeh
+							<br class="mobile">
+							보케
+						</strong>
+						<div class="main_pf_view_line"></div>
+						<span class="view_list_img_box">
+							<img src="../images/icon/main_pf_view_icon_2.png" alt="보케">
+						</span>
+					</div>
+					<div class="main_pf_view_sub_list">
+						<strong class="view_list_title">
+							Bokeh
+							<br class="mobile">
+							보케
+						</strong>
+						<div class="main_pf_view_line"></div>
+						<p class="view_sub_txt">주 피사체를 더욱 돋보이게 합니다.</p>
+					</div>
+				</li>
+				<li>
+					<div class="main_pf_view_list">
+						<strong class="view_list_title">
+							Auto Focus
+								<br class="mobile">
+								자동초점
+						</strong>
+						<div class="main_pf_view_line"></div>
+						<span class="view_list_img_box">
+							<img src="../images/icon/main_pf_view_icon_3.png	" alt="af">
+						</span>
+					</div>
+					<div class="main_pf_view_sub_list">
+						<strong class="view_list_title">
+							Auto Focus
+							</strong>
+						<div class="main_pf_view_line"></div>
+						<p class="view_sub_txt">AF를 통해 사진 및 영상에서 <br> 유용하게 사용이 가능합니다.</p>
+					</div>
+				</li>
+			</ul>
+	</section>
+</article>
+
+<article class="line_up">
+	<section class="wraper">
+		<div class="main_line_up_title">
+			<h2>Magnificent</h2>
+			<p class="main_line_up_txt_fixed">
+				FULL - FRAME COMPACT
+			</p>
+		</div>
+		<div class="main_line_up_prd_container">
+			<div class="line_up_prd swiper-container">
+				<div class="lin_up_prd_box swiper-wrapper">
+					<div class="lin_up_prd_item swiper-slide">
+						<div class="line_up_prd_img_wraper">
+							<img src="../images/main/main_line_up_slide_img_1.jpg" alt="line_up_img1">
+						</div>
+						<div class="line_up_prd_info">
+							<div class="line_up_prd_info_title">
+								α7C Full-frame Compact
+							</div>
+						</div>
+						<div class="line_up_prd_info_desc">
+							<span>More Product Information</span>
+						</div>
+						<div class="line_up_prd_immedi">
+							<span>지금 구매하세요</span>
+						</div>
+					</div>
+					<div class="lin_up_prd_item swiper-slide">
+						<div class="line_up_prd_img_wraper">
+							<img src="../images/main/main_line_up_slide_img_2.jpg
+							" alt="line_up_img2">
+						</div>
+						<div class="line_up_prd_info">
+							<div class="line_up_prd_info_title">
+								FE 24mm F1.4 GM
+							</div>
+						</div>
+						<div class="line_up_prd_info_desc">
+							<span>More Product Information</span>
+						</div>
+						<div class="line_up_prd_immedi">
+							<span>지금 구매하세요</span>
+						</div>
+					</div>
+					<div class="lin_up_prd_item swiper-slide">
+						<div class="line_up_prd_img_wraper">
+							<img src="../images/main/main_line_up_slide_img_3.jpg" alt="line_up_img3">
+						</div>
+						<div class="line_up_prd_info">
+							<div class="line_up_prd_info_title">
+								FE 50mm F1.8
+							</div>
+						</div>
+						<div class="line_up_prd_info_desc">
+							<span>More Product Information</span>
+						</div>
+						<div class="line_up_prd_immedi">
+							<span>지금 구매하세요</span>
+						</div>
+					</div>
+					<div class="lin_up_prd_item swiper-slide">
+						<div class="line_up_prd_img_wraper">
+							<img src="../images/main/main_line_up_slide_img_4.jpg" alt="line_up_img4">
+						</div>
+						<div class="line_up_prd_info">
+							<div class="line_up_prd_info_title">
+								Sonnar T* FE 55mm F1.8 ZA
+							</div>
+						</div>
+						<div class="line_up_prd_info_desc">
+							<span>More Product Information</span>
+						</div>
+						<div class="line_up_prd_immedi">
+							<span>지금 구매하세요</span>
+						</div>
+					</div>
+					<div class="lin_up_prd_item swiper-slide">
+						<div class="line_up_prd_img_wraper">
+							<img src="../images/main/main_line_up_slide_img_5.jpg" alt="line_up_img5">
+						</div>
+						<div class="line_up_prd_info">
+							<div class="line_up_prd_info_title">
+								FE 35mm F1.8
+							</div>
+						</div>
+						<div class="line_up_prd_info_desc">
+							<span>More Product Information</span>
+						</div>
+						<div class="line_up_prd_immedi">
+							<span>지금 구매하세요</span>
+						</div>
+					</div>
+				</div>
+				<div class="main_line_up_btn swiper-button-next">
+					<span class="line_up_swiper_btn next">
+						
+					</span>
+				</div>
+				<div class="main_line_up_btn swiper-button-prev">
+					<span class="line_up_swiper_btn prev">
+						
+					</span>
+				</div>
+			</div>
+			<div class="main_line_up_slide_pagination swiper-pagination">
+		</div>
+	</section>
+</article>
+
+<article class="other">
+	<section class="wraper">
+		<div class="other_titlebox">
+			<h2>marvel</h2>
+			<p class="other_txt_fixed">
+				STANDARD - marvelous gap
+			</p>
+			<div class="pc_other_title_description">
+				<span class="pc_other_desc_title">
+				 <strong>Beyound the world</strong>
+				 <p>
+					Whatever you think,
+					<br> that's more than that
+				</p>
+				</span>
+				<p class="other_fixed_ko">
+					당신의 삶을 특별하게 해줄 스마트한
+					소니스토어 추천 제품을 살펴보세요.
+				</p>
+			</div>
+		</div>
+		<div class="other_slide_container">
+
+			<div class="other_slide_box">
+				<div class="other_slide_cot swiper-container">
+					<div class="other_slide_wrp swiper-wrapper">
+						<div class="other_slide_item swiper-slide">
+							<div class="other_slide_img_wraper">
+								<img src="../images/main/other_slide_img_1.jpg" alt="other_1">
+							</div>
+						</div>
+						<div class="other_slide_item swiper-slide">
+							<div class="other_slide_img_wraper">
+								<img src="../images/main/other_slide_img_2.jpg" alt="other_2">
+							</div>
+						</div>
+						<div class="other_slide_item swiper-slide">
+							<div class="other_slide_img_wraper">
+								<img src="../images/main/other_slide_img_3.jpg" alt="other_3">
+							</div>
+						</div>
+						<div class="other_slide_item swiper-slide">
+							<div class="other_slide_img_wraper">
+								<img src="../images/main/other_slide_img_4.jpg" alt="other_4">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="other_slide_pagination_box swiper-pagination"></div>
+			<div class="other_title_description mobile">
+				<span>
+				 <strong>Beyound the world</strong>
+				</span>
+				<p class="mobile_other_txt_en">	
+					Whatever you think,
+					<br>
+					 that's more than that
+					 <br>
+				</p>
+				<p class="mobile_other_txt_ko">
+					표준의 초 격차 제품들을 만나보세요.
+				</p>
+			</div>
+		</div>
+	</section>
+</article>
+
+
+<article class="academy">
+	<section class="wraper">
+		<div class="academy_inner">
+			<h2>Academy</h2>
+			<div class="academy_content">
+				<div class="academy_item">
+					<div class="academy_item_img_wraper">
+						<img src="../images/main/academy_img_1.jpg" alt="academy_img_1">
+					</div>
+					<div class="academy_item_txt">
+						<div class="can_info">
+							<span class="can_info_specific">제품사용법</span>
+							<span class="academy_apply">
+								신청가능
+							</span>
+						</div>
+						<span class="academy_title_txt">
+							[제품사용법] 소니 카메라/렌즈 기초 가이드 - 1강
+						</span>
+						<ul class="academy_desc">
+							<li>강사 : 신재국</li>
+							<li>접수 기간 : 2022.11.24(목)  ~ 2022.12.01(목) </li>
+							<li>수강일 : 2022.12.03(토) </li>
+							<li>수강 인원 : 12명</li>
+						</ul>
+					</div>
+				</div>
+				<div class="academy_item">
+					<div class="academy_item_img_wraper">
+						<img src="../images/main/academy_img_2.jpg" alt="academy_img_2">
+					</div>
+					<div class="academy_item_txt">
+						<div class="can_info">
+							<span class="can_info_specific">사진실습</span>
+							<span class="academy_apply">
+								신청가능
+							</span>
+						</div>
+						<span class="academy_title_txt">
+							[사진촬영초급] 인물 리얼타임 트래킹
+						</span>
+						<ul class="academy_desc">
+							<li>강사 : 김현수</li>
+							<li>접수 기간 : 2022.11.24(목)  ~ 2022.12.10(토) </li>
+							<li>수강일 : 2022.12.12(월) </li>
+							<li>수강 인원 : 10명</li>
+						</ul>
+					</div>
+				</div>
+				<div class="academy_item">
+					<div class="academy_item_img_wraper">
+						<img src="../images/main/academy_img_3.jpg" alt="academy_img_3">
+					</div>
+					<div class="academy_item_txt">
+						<div class="can_info">
+							<span class="can_info_specific">More</span>
+							<span class="academy_apply">
+								신청가능
+							</span>
+						</div>
+						<span class="academy_title_txt">
+							[알파아카데미 x EPSON] 사진 프린팅 클래스 - 인화 실습
+						</span>
+						<ul class="academy_desc">
+							<li>강사 : 정기수</li>
+							<li>접수 기간 : 2022.11.24(목)  ~ 2022.12.09(금) </li>
+							<li>수강일 : 2022.12.11(일) </li>
+							<li>수강 인원 : 10명</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</article>
+
+<article class="admitt">
+	<section class="wraper">
+	<div class="admitt_img_box">
+		<div class="admitt_inner">
+			<h2 class="admitt_inner_title">
+			알파 아카데미 <br>
+			 수강신청 이벤트</h2>
+			<span>자세히보기</span>
+		</div>
+		
+		<div class="early_count_container">
+			<p class="early_count_title"><span>Early-birth Event</span></p>
+			<div class="timer_container">
+			<div id="time_hours"><span>HR</span></div>
+			<div id="time_mins"><span>MIN</span></div>
+			<div id="time_secs"><span>SEC</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="inp_wrap">
+		<h2 class="inp_wrap_tit">개인정보 입력</h2>
+		<div class="inp_wrap_cont">
+			<p class="inp_wrap_amp">
+				표시는 필수입력 정보
+			</p>
+			<div class="inp_wrap_form">
+				<div class="acc_cellvat">
+					<label for="enterprise_name">이름 <i class="necessary"></i>
+					</label>
+				</div>
+				<div class="acc_cell">
+					<div class="acc_group">
+						<div class="acc_inp type1">
+							<input type="text" class="inp" id="enterprise_name" placeholder="이름을 입력하세요" autocomplete="off" max="50">
+							<span class="focus_bg"></span>
+						</div>
+					</div>
+				</div>
+				<div class="error_txt">
+					<span class="ico"></span>
+					이름을 입력해주세요.
+				</div>
+			</div>
+			<div class="inp_wrap_form">
+				<div class="acc_cellvat">
+					<label for="user_email">
+					이메일 <i class="necessary"></i>
+					</label>
+				</div>
+				<div class="acc_cell">
+					<div class="acc_group">
+						<div class="acc_inp type1">
+							<input type="text" class="inp" id="user_email" placeholder="예) sony@sony.co.kr" autocomplete="off" max="25">
+							<span class="focus_bg"></span>
+						</div>
+					</div>
+				</div>
+				<div class="error_txt">
+					<span class="ico"></span>
+					이메일을 입력해주세요.
+				</div>
+			</div>
+			<div class="inp_wrap_form">
+				<div class="acc_cellvat">
+					<label for="user_number">
+					휴대폰 번호 <i class="necessary"></i>
+					</label>
+				</div>
+				<div class="acc_cell">
+					<div class="acc_group">
+						<div class="acc_inp type1">
+							<input type="phone" class="inp" id="user_number" placeholder="- 없이 입력하세요." autocomplete="off" max="25">
+							<span class="focus_bg"></span>
+						</div>
+					</div>
+				</div>
+				<div class="error_txt">
+					<span class="ico"></span>
+					휴대폰을 입력해주세요.
+				</div>
+			</div>
+		</div>
+		<div class="admitt_btn_box">
+			<button type="button">신청하기</button>
+		</div>
+	</div>
+	</section>
+	</article>
+
+	<article class="photos">
+		<section class="wraper">
+			<h2>Artista</h2>
+			<div class="photos_inner">
+				<div class="photo_img_wraper">
+					<img src="../images/main/inspiration_img_1.jpg" alt="@summer_jiin" title="@summer_jiin">
+					<div class="photo_img_txt">
+						<span>
+							Photo by @summer_jiin
+						</span>
+					</div>
+				</div>
+				<div class="photo_img_wraper">
+					<img src="../images/main/inspiration_img_2.jpg" alt="@pic._.key" title="@pic._.key">
+					<div class="photo_img_txt">
+						<span>
+							Photo by @pic._.key
+						</span>
+					</div>
+				</div>
+				<div class="photo_img_wraper">
+					<img src="../images/main/inspiration_img_3.jpg" alt="@1_am_dongjoon" title="@1_am_dongjoon">
+					<div class="photo_img_txt">
+						<span>
+							Photo by @1_am_dongjoon
+						</span>
+					</div>
+				</div>
+				<div class="photo_img_wraper">
+					<img src="../images/main/inspiration_img_4.jpg" alt="@donghyun.u" title="@donghyun.u">
+					<div class="photo_img_txt">
+						<span>
+							Photo by @donghyun.u
+						</span>
+					</div>
+				</div>
+				<div class="photo_img_wraper">
+					<img src="../images/main/inspiration_img_7.jpg" alt="#브이로그" title="#브이로그 #sony">
+					<div class="photo_img_txt">
+						<span>
+							#ZV1
+						</span>
+					</div>
+				</div>
+				<div class="photo_img_wraper">
+					<img src="../images/main/inspiration_img_8.jpg" alt="@mild_vivid" title="@mild_vivid">
+					<div class="photo_img_txt">
+						<span>
+							Photo by @mild_vivid
+						</span>
+					</div>
+				</div>
+				<div class="photo_img_wraper">
+					<img src="../images/main/inspiration_img_5.jpg" alt="@___spearmint" title="@___spearmint">
+					<div class="photo_img_txt">
+						<span>
+							Photo by @___spearmint
+						</span>
+					</div>
+				</div>
+				<div class="photo_img_wraper">
+					<img src="../images/main/inspiration_img_6.jpg" alt="@_photobyharu" title="@_photobyharu">
+					<div class="photo_img_txt">
+						<span>
+							Photo by @_photobyharu
+						</span>
+					</div>
+				</div>
+				<div class="photo_img_wraper">
+					<img src="../images/main/inspiration_img_9.jpg" alt="사진공모전" title="#sony #공모전사진">
+					<div class="photo_img_txt">
+						<span>
+							#사진공모전
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="photos_caution">
+				* 본 저작권은 사진작가들에게 있습니다. (마우스를 호버하십시오)
+			</div>
+		</section>
+	</article>
+
+	<article class="a6">
+		<section class="wraper">
+		<div class="a6_inner">
+			<div class="a6_top">
+				<div class="a6_imgWraper">
+					<img src="../images/main/letter_hero_img.jpg" alt="히어로이미지">
+				</div>
+			</div>
+			<div class="a6_bottom">
+				<div class="a6_title">
+					 news letter about sony
+				</div>
+				<div class="a6_subtitle">
+					 글로벌 커뮤니티에 가입하고 sony.co.kr에서 첫 구매 시 5% 할인을 받으세요 (신규 회원에게만 유효).
+				</div>
+				<div class="a6_description">
+					<div class="a6_newsletter">
+						<p>
+							이외 다양한 혜택:
+						</p>
+						<ul>
+							<li>
+							<p>
+								영상 변환 서비스
+							</p>
+							</li>
+							<li>
+							<p>
+								연장 서비스 플랜
+							</p>
+							</li>
+							<li>
+							<p>
+								제품 구매 시 결제 금액의 4%적립
+							</p>
+							</li>
+						</ul>
+						<p class="a6_height">
+						</p>
+					</div>
+				</div>
+				<form action="" class="a6_form" method="post">
+					<div class="a6_input-email">
+						<label for="newsletter-email">
+						<span class="a6_placeholder">
+						Email * </span>
+						<span class="email_wraper">
+						<input type="email" id="newsletter-email" maxlength="100">
+						</span>
+						</label>
+						<p class="a6_error">
+							이메일은 필수 필드입니다
+						</p>
+					</div>
+					<div class="a6_input_lastName">
+						<label for="newsletter-lastName">
+						<span class="a6_placeholder">
+						성 * </span>
+						<span class="lastName_wraper">
+						<input type="text" id="newsletter-lastName" maxlength="100">
+						</span>
+						</label>
+						<p class="a6_error">
+							성은 필수 필드입니다
+						</p>
+					</div>
+					<div class="a6_input_firstName">
+						<label for="newsletter-firstName">
+						<span class="a6_placeholder">
+						이름 * </span>
+						<span class="firstName_wraper">
+						<input type="text" id="newsletter-firstName" maxlength="100">
+						</span>
+						</label>
+						<p class="a6_error">
+							이름 필수 필드입니다
+						</p>
+					</div>
+					<div class="a6_agreement">
+						<p>
+							 소니 고객지원 사이트(SCS) 와 소니스토어는 하나의 ID 와 비밀번호로 운영됩니다. 소니 고객지원 사이트(SCS)의 이용약관에 함께 동의하시면, 하나의 ID로 고객지원 사이트(SCS)를 편리하게 이용하실 수 있습니다. <span class="a6_hide">당사가 귀하의 개인 데이터로 수행하는 일에 대한 자세한 내용은 <span>개인 정보 보호 정책</span>을 참조하세요.</span>
+						</p>
+						<p class="a6_hide">
+							이 사이트는 reCAPTCHA에 의해 보호되며 Google <span>개인 정보 취급 정책</span>및 <span>서비스 약관</span>이 적용됩니다.
+						</p>
+						<span class="a6_more_gree">... <i>자세히 보기</i></span>
+					</div>
+					<div class="a6_btnwraper">
+						<button>
+						<span>구독하기</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		</section>
+		</article>	
+		<footer>
+			<div class="foo_wrapper">
+			<div class="pc_foo_logo">
+				<img src="../images/logo/sony_logo.svg" alt="">
+			</div>
+			<div class="f_inner">
+				<div class="foo_top">
+					<div class="foo_leagal">
+						<div class="foo_leagal_1box">
+							<span>고객센터</span>
+							<span>이용약관</span>
+							<span>개인정보처리방침</span>
+						</div>
+						<div class="foo_leagaal_2box">
+							<span>이메일무단수집금지</span>
+							<span>Contact Us</span>
+						</div>
+					</div>
+				</div>
+				<div class="foo_mid">
+					<div class="foo_info">
+						<p>
+							사업장주소 : 서울특별시 영등포구 국제금융로 10 원아이에프씨 24F
+						</p>
+						<p>
+							대표이사 : Okura Kikuo
+						</p>
+						<p>
+							사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜
+						</p>
+						<p>
+							TEL : 소니코리아 고객센터 1588-0911
+						</p>
+						<p>
+							E-MAIL : cshelp@sony.co.kr
+						</p>
+					</div>
+					<ul class="foo_social">
+						<li><img src="../images/icon/facebook.svg" alt="facebook"></li>
+						<li><img src="../images/icon/instagram.svg" alt="instagram"></li>
+						<li><img src="../images/icon/youtube.svg" alt="youtube"></li>
+						<li><img src="../images/icon/blog.svg" alt="blog"></li>
+					</ul>
+					<div class="foo_group">
+						<button>
+							Sony Family
+						</button>
+						<div class="foo_family_inner">
+							<h4 class="foo_optgroup_label">
+								Sony Family
+							</h4>
+							<ul class="optgroup">
+								<li class="option">
+									<a>소니코리아</a>
+								</li>
+								<li class="option">
+									<a>소니코리아 고객지원</a>
+								</li>
+								<li class="option">
+									<a>소니 알파 α</a>
+								</li>
+								<li class="option">
+									<a>소니 방송/업무용 솔루션</a>
+								</li>
+								<li class="option">
+									<a>소니 방송 업무용 솔루션 고객지원</a>
+								</li>
+							</ul>
+							<h4 class="foo_optgroup_label">
+								Family Company
+							</h4>
+							<ul class="optgroup">
+								<li class="option">
+									<a>소니 인터렉티브 엔터테인먼트 코리아</a>
+								</li>
+								<li class="option">
+									<a>소니 뮤직 엔터테인먼트 코리아</a>
+								</li>
+								<li class="option">
+									<a>소니 ATV 뮤직 퍼블리싱 코리아</a>
+								</li>
+								<li class="option">
+									<a>소니 픽쳐스 엔터테인먼트 코리아</a>
+								</li>
+								<li class="option">
+									<a>소니 픽쳐스 텔레비전 코리아</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="foo_bottom">
+					<p class="foo_copy">
+						Copyright © Sony Korea Corporation. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+			<script>
+				const foo_btn = document.querySelector(".foo_group button");
+				const foo_btn_box = document.querySelector(".foo_family_inner");
+				foo_btn.addEventListener("click",()=> {
+					if(!foo_btn.classList.contains("on")) {
+						foo_btn.classList.add("on");
+					} else {
+						foo_btn.classList.remove("on");
+					}
+				})
+			</script>
+		</footer>
+</body>
+</html>

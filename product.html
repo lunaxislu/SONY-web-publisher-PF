@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../images/logo/title_logo.png" type="image/x-icon">
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/product.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script src="../javascript/product.js" defer></script>
+<script src="../javascript/menu.js" defer></script>
+<title>Product</title>
+</head>
+<body>
+	<header>
+		<div class="header_inner">
+		<h1 class="logo" onclick="location.href='index.html'">
+		<img src="../images/logo/sony_logo.svg" alt="logo">
+		</h1>
+		<nav>
+		<ul class="pc_menu_lists">
+			<li>
+				<span onclick="location.href='product.html'">Product</span>
+				</li>
+			<li>
+				<span onclick="location.href='login.html'">Login</span>
+			</li>
+			<li>
+				<span onclick="location.href='register.html'">Join</span>
+			</li>
+			<li>
+				<span onclick="location.href='cart.html'">Order</span>
+			</li>
+
+			<li onclick="location.href='faq.html'">
+			<span>Faq & Notice</span>
+			</li>
+			<li>
+				<span onclick="location.href='inquiry.html'">Inquiry</span>
+				</li>
+			<li>
+				<span onclick="location.href='membership.html'">Membership</span>
+				</li>
+
+				<li>
+					<span onclick="location.href='gallery.html'">Gallery</span>
+					</li>
+			<li>
+			<span onclick="location.href='location.html'">Location</span>
+			</li>
+		</ul>
+		<ul class="main_menu">
+			<li class="pc log cursor">
+			<span
+			onclick="location.href='login.html'"><img src="../images/icon/main_login.svg" alt="login"></span>
+			</li>
+			<li class="pc cursor cart_go" onclick="location.href='cart.html'">
+			<img src="../images/icon/main_cart.svg" alt="장바구니">
+			<span class="badge"><span>0</span></span>
+			</li>
+			<li class="search cursor">
+			<img src="../images/icon/search.svg" alt="search_img">
+			<div class="search_contents">
+				<div class="search_content">
+					<button class="search_close">
+					<span class="material-symbols-outlined"> close </span>
+					</button>
+					<form action="find_out" method="get">
+						<div class="input_wraper">
+							<button>
+							<span class="material-symbols-outlined"> search </span>
+							</button>
+							<input type="search" placeholder="검색어를 입력해주세요.">
+						</div>
+					</form>
+					<div class="suggestions_wraper">
+						<div class="nodata">
+							<p>
+									최근 검색어가 없습니다.
+							</p>
+						</div>
+						<div class="suggestions">
+							<p>
+									인기검색어
+							</p>
+							<div class="recommend">
+								<ul>
+									<li># WH-1000XM5</li>
+									<li># ZV-1</li>
+									<li># ILCE-7M4</li>
+									<li># LinkBuds S</li>
+									<li># LSPX-S3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="search_dashboard_wraper">
+						<div class="contents">
+							<img src="../images/main/search_img_1.png" alt="카메라">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="contents">
+							<img src="../images/main/search_img_2.png" alt="이어폰">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="pc_contents">
+							<img src="../images/main/search_img_3.png" alt="">
+							<span class="badge_text" style="color: rgb(255, 78, 0);">
+							NEW </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>
+			<li id="menu">
+			<span>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+			</span>
+			</li>
+		</ul>
+		</nav>
+		</div>
+		<div class="sitemap">
+		<div class="txt-box">
+			<ul class="link-menu">
+				<li class="mobile_member_login member_login">
+				<span onclick="location.href='register.html'">회원가입</span>
+				</li>
+				<li class="member_menuorder">
+				<span onclick="location.href='login.html'">주문/배송 조회</span>
+				</li>
+				<li class="mobile_member_cart cart_go">
+				<span onclick="location.href='cart.html'">장바구니 <span class="badge">
+				<span>0</span>
+				</span>
+				</span>
+				</li>
+			</ul>
+			<ul class="sitemap-menu">
+				<li class="log">
+				<span onclick="location.href='login.html'">login</span>
+				<div class="line">
+				</div>
+				<ul class="sub_menu">
+					<li>
+					<span onclick="location.href='product.html'">product</span>
+					</li>
+					<li>
+					<span onclick="location.href='location.html'">location</span>
+					</li>
+					<li>
+					<span onclick="location.href='membership.html'">Membership</span>
+					</li>
+					<li>
+					<span onclick="location.href='gallery.html'">gallery</span>
+					</li>
+					<li>
+					<span onclick="location.href='faq.html'">faq & notice</span>
+					</li>
+					<li>
+					<span onclick="location.href='inquiry.html'">inquiry</span>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			<ul class="sns">
+				<li>
+				<a>
+				<img src="../images/icon/facebook.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/instagram.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/youtube.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/blog.svg" alt="">
+				</a>
+				</li>
+			</ul>
+		</div>
+		<div class="pc_sitemap_img_box">
+			<ul class="site_img_list">
+				<li><img src="../images/main/pc_menu_img_1.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_2.jpg" alt="" style="object-fit:initial;"></li>
+				<li><img src="../images/main/pc_menu_img_3.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_4.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_5.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_6.jpg" alt=""></li>
+			</ul>
+		</div>
+		</div>
+		</header>
+
+<article class="product">
+  <section class="wraper">
+  <div class="prd_content_box">
+    <div class="prd_container_tab1 prd_img black">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_black_1.png" alt="prd_black_1_img">
+            </div>
+          </div>
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_black_2.png" alt="prd_black_2_img">
+            </div>
+          </div>
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_black_3.png" alt="prd_black_3_img">
+            </div>
+          </div>
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_black_4.png" alt="prd_black_4_img">
+            </div>
+          </div>
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_black_5.png" alt="prd_black_5_img">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next">
+          <span class="material-symbols-outlined">
+          arrow_forward_ios </span>
+        </div>
+        <div class="swiper-button-prev">
+          <span class="material-symbols-outlined">
+          arrow_back_ios </span>
+        </div>
+      </div>
+    </div>
+    <div class="prd_container_tab2 prd_img white false">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_white_1.png" alt="prd_white_1_img">
+            </div>
+            </div>  
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_white_2.png" alt="prd_white_2_img">
+            </div>
+            </div>  
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_white_3.png" alt="prd_white_3_img">
+            </div>
+            </div>  
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_white_4.png" alt="prd_white_4_img">
+            </div>
+            </div>  
+          <div class="prd_slide_item swiper-slide">
+            <div class="prd_img_wrap">
+              <img src="../images/product/product_img_white_5.png" alt="prd_white_5_img">
+            </div>
+            </div>  
+        </div>
+        <div class="swiper-button-next">
+          <span class="material-symbols-outlined">
+          arrow_forward_ios </span>
+        </div>
+        <div class="swiper-button-prev">
+          <span class="material-symbols-outlined">
+          arrow_back_ios </span>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+          <form>
+            <div class="prd_view_about">
+              <div class="prd_view_cont">
+                <span class="prd_view_flag">
+                HOT </span>
+                <p class="prd_view_title">
+                  ZV-E10L
+                </p>
+                <p class="prd_view_txt">
+                   데일리 렌즈교환식 브이로그 카메라
+                </p>
+                <ul class="prd_view_social_list">
+                  <li class="prd_view_social_like">
+                  <img src="../images/product/prd_like_white.png" alt="like_wh" class="prd_like_white">
+                  <img src="../images/product/prd_like_red.png" alt="like_red" class="prd_like_red">
+                  </li>
+                  <li class="share">
+                  <span>공유하기</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="prd_view_cont_price_container">
+                <p class="delivery_txt">
+                  무료배송
+                </p>
+                <div class="prd_view_price">
+                  <div class="sale">
+                    <strong class="sale_price">948,000</strong>
+                    원
+                  </div>
+                </div>
+              </div>
+              <div class="prd_view_membership_container">
+                <p class="prd_mem_title">
+                  회원별 마일리지 적립혜택
+                  <span>!</span> 
+                </p>
+                <div class="question_sign">
+                  <p class="sign_txt">
+                    회원 등급별 기본으로 적립되는 마일리지 혜택과&nbsp;
+                    <br class="pc">
+                    이벤트를 통해 지급되는 마일리지는 상이할 수 있습니다.
+                  </p>
+                </div>
+                <ul class="membership_rating">
+                  <li class="vip_membership">
+                    <span class="mark">V</span>
+                    <div class="save_vip_info">
+                      <span>
+                        VIP
+                        4
+                        %
+                      </span>
+                      <p class="vip_percent">
+                        <span>33,920</span>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="family_membership">
+                    <span class="mark">MEMBERSHIP</span>
+                    <div class="save_membership_info">
+                      <span>
+                        MEMBERSHIP
+                        2
+                        %
+                      </span>
+                      <p class="family_percent">
+                        <span>16,960</span>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="prd_view_cont_color">
+                <div class="prd_color_select">
+                  <p class="prd_color_title">
+                     색상
+                  </p>
+                  <ul class="prd_color_box">
+                    <li>
+                    <span class="prd_color_btn">
+                    <span class="circle_color">
+                    <span class="circle_color_bg black"></span>
+                    </span>
+                    <span class="prd_color_name">블랙</span>
+                    </span>
+                    </li>
+                    <li class="false">
+                    <span class="prd_color_btn">
+                    <span class="circle_color white false">
+                    <span class="circle_color_bg"></span>
+                    </span>
+                    <span class="prd_color_name">화이트</span>
+                    </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="prd_view_cont_select_wrap prd_view_camera">
+                <div class="main_prd_select_inner">
+                  <div class="main_prd_select_box">
+                    <p class="main_prd_select_title">
+                      제품선택
+                    </p>
+                    <div>
+                      <div class="select_ui_zone">
+                        <span class="selected_btn">제품을 선택하세요.</span>
+                        <div class="select_inner">
+                          <p class="select_prd_tag">
+                            제품
+                          </p>
+                          <ul class="select_prd_opt">
+                            <li>
+                            <span class="select_prd_opt_list">
+                            <div class="prd_opt_list_item">
+                              <span class="circle_color">
+                              <span class="circle_color_bg black"></span>
+                              </span>
+                              <span class="prd_opt_name">ZV-E10L / 블랙</span>
+                            </div>
+                            </span>
+                            </li>
+                            <li>
+                            <span class="select_prd_opt_list">
+                            <div class="prd_opt_list_item">
+                              <span class="circle_color">
+                              <span class="circle_color_bg"></span>
+                              </span>
+                              <span class="prd_opt_name">ZV-E10L / 화이트</span>
+                            </div>
+                            </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main_prd_select_opt false">
+                    <div class="selected_opt_info">
+                      <p class="select_prd_tag">
+                        제품
+                      </p>
+                      <div class="prd_opt_list_item false">
+                        <span class="circle_color">
+                        <span class="circle_color_bg black">
+                        </span>
+                        </span>
+                        <span class="prd_opt_name">ZV-E10L / 블랙</span>
+                      </div>
+                      <div class="prd_opt_list_item false">
+                        <span class="circle_color">
+                        <span class="circle_color_bg"></span>
+                        </span>
+                        <span class="prd_opt_name">ZV-E10L / 화이트</span>
+                      </div>
+                      <div class="selected_opt_list_count">
+                        <div class="count_box">
+                          <span class="minus"></span>
+                          <input type="text" value="1" class="main_prd_select_inp">
+                          <span class="plus"></span>
+                        </div>
+                        <p class="main_prd_opt_price">
+                          <strong class="price">948000</strong>
+                          원
+                        </p>
+                      </div>
+                      <span class="prd_selected_close_container"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="main_prd_result_list">
+                  <div class="main_prd_result_chk_box">
+                    <p class="result_chk_box_title">
+                       총 상품금액 <span class="s_txt">
+                      (총 <span class="count">0</span>
+                      개) </span>
+                    </p>
+                    <p class="result_price">
+                      <span class="num">0</span>
+                      원
+                    </p>
+                  </div>
+                </div>
+                <div class="main_prd_result_btn_box">
+                  <button type="button">바로 구매하기</button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+    </div>
+  </div>
+  </section>
+  </article>
+
+
+  <div class="product_link_modal false">
+    <div class="prd_link_modal_layer">
+    </div>
+    <div class="prd_link_modal_inner">
+      <div class="prd_link_modal_cont">
+        <p class="prd_link_modal_title">
+          공유하기
+        </p>
+        <div class="prd_copy_box">
+          <span class="prd_copy_txt">
+          https://http://lunna.dothome.co.kr/ </span>
+          <a href="#none" class="copy_url">링크 복사</a>
+        </div>
+        <div class="prd_link_share_lists">
+          <ul>
+            <li class="prd_link_share_list">
+            <span class="prd_link_share_lists_kakao">카카오톡</span>
+            </li>
+            <li class="prd_link_share_list">
+            <span class="prd_link_share_lists_kakaostory">카카오스토리</span>
+            </li>
+            <li class="prd_link_share_list">
+            <span class="prd_link_share_lists_facebook">페이스북</span>
+            </li>
+            <li class="prd_link_share_list">
+            <span class="prd_link_share_lists_twitter">트위터</span>
+            </li>
+            <li class="prd_link_share_list">
+            <span class="prd_link_share_lists_line">라인</span>
+            </li>
+            <li class="prd_link_share_list">
+            <span class="prd_link_share_lists_band">밴드</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="prd_link_modal_closeBx">
+      <span class="prd_link_modal_close"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="prd_menual">
+    <div class="prd_relation_link">
+      <ul class="relation_inner">
+        <li>
+          <span>
+            <i class="relation_icon">
+              <img src="../images/icon/alpha_icon.png" alt="alpha">
+            </i>
+          </span>
+          <span class="relation_txt">소니 알파 유니버스</span>
+        </li>
+        <li>
+          <span>
+            <i class="relation_icon">
+              <img src="../images/icon/sony_blog_icon.png" alt="blog">
+            </i>
+          </span>
+          <span class="relation_txt">소니 블로그</span>
+        </li>
+        <li>
+          <span>
+            <i class="relation_icon">
+              <img src="../images/icon/menual_icon.png" alt="menaul">
+            </i>
+          </span>
+          <span class="relation_txt">메뉴얼 다운로드</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <article class="product_recommend">
+    <div class="prd_recommend_title">
+      <h2>RECOMMEND</h2>
+      <p>premium</p>
+    </div>
+    <section class="rec_video_container">
+      <div class="rec_video_wraper">
+        <video id="prd_vid" src="../images/video/product_video.mp4" autoplay="autoplay" muted="muted"></video>
+        <script>
+          const vid = document.getElementById("prd_vid");
+         vid.play();
+         vid.loop = true;
+        </script>
+      </div>
+      <div class="re_cont">
+        <div class="re_cont_inner">
+         <strong>Mangnificent</strong>
+         <p>
+          Fill the world with emotion , through the power of creativity and technology.
+          <br>
+          <br>
+          창의력과 기술의 힘을 통해 세상을 감동으로 가득 채우며
+꿈과 호기심으로 미래를 개척합니다.
+         </p>
+        </div>
+      </div>
+    </section>
+    <section class="rec_img">
+      <div class="re_cont_bg camera"></div>
+      <div class="re_cont">
+        <div class="re_cont_title">
+          camera
+        </div>
+        <p>
+          <span class="re_cont_sub_title">
+            일상을 눈에 담다.
+          </span>
+          <br>
+          <br>
+          풀프레임 베스트셀러로서
+          카메라의 표준을 새로이 제시합니다.
+          <br> 사진과 영상 촬영 모두에서 혁신적인 성능을 자랑하는 소니의 카메라로
+          당신의 예술적 영감을 표현하세요.
+        </p>
+        <div class="re_cont_sub_inner">
+          <ul>
+            <li>
+              <span>ILME-FR7</span>
+            </li>
+            <li>
+              <span>ZV-1F</span>
+            </li>
+            <li>
+              <span>ZV-E10L</span>
+            </li>
+            <li>
+              <span>ILCE-6400L</span>
+            </li>
+          </ul>
+          <span class="re_cont_btn_box">
+            <button>더 보러가기</button>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="rec_img">
+      <div class="re_cont_bg video"></div>
+      <div class="re_cont">
+        <div class="re_cont_title">
+          video
+        </div>
+        <p>
+          <span class="re_cont_sub_title">
+            일상의 모든 순간을 담아보세요.
+          </span>
+          <br>
+          <br>
+          풀프레임 베스트셀러로서
+          완전히 새로운 <span>Cinema Line</span> 풀프레임
+          <span>렌즈교환식 PTZ</span>카메라 <br>
+          기존에는 상상할 수 없었던 창의적인 앵글로 영상 촬영에
+          무한한 가능성을 더해 보세요.
+        </p>
+        <div class="re_cont_sub_inner">
+          <ul>
+            <li>
+              <span>ILCE-7RM5</span>
+            </li>
+            <li>
+              <span>ILME-FX30 (핸들 킷)</span>
+            </li>
+            <li>
+              <span>FDR-AX43A</span>
+            </li>
+            <li>
+              <span>ILME-FX30B (바디킷)</span>
+            </li>
+          </ul>
+          <span class="re_cont_btn_box">
+            <button>더 보러가기</button>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="rec_img">
+      <div class="re_cont_bg audio"></div>
+      <div class="re_cont">
+        <div class="re_cont_title">
+          audio
+        </div>
+        <p>
+          <span class="re_cont_sub_title">
+            "완벽한 몰입을 경험하다."
+          </span>
+          <br>
+          <br>
+          편안하면서도 입체감있는
+          개인별 귀 모양에 맞춘 최적화된 맞춤 사운드           <br>
+          <span>360 Spatial Sound Personalizer</span>앱*을 통해 자신의 귀를 촬영, 귀 모양에 최적화된 입체감 있는 사운드를 제공합니다.
+        </p>
+        <div class="re_cont_sub_inner">
+          <ul>
+            <li>
+              <span>INZONE H9</span>
+            </li>
+            <li>
+              <span>WH-1000XM5</span>
+            </li>
+            <li>
+              <span>LinkBuds S</span>
+            </li>
+            <li>
+              <span>WF-1000XM4</span>
+            </li>
+          </ul>
+          <span class="re_cont_btn_box">
+            <button>더 보러가기</button>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="rec_img">
+      <div class="re_cont_bg special"></div>
+      <div class="re_cont">
+        <div class="re_cont_title">
+          special
+        </div>
+        <p>
+          <span class="re_cont_sub_title">
+            "일상의 모든 것을 함께"
+          </span>
+          <br>
+          <br>
+         언제 어디서든 소니 시리즈는 인생의 매 순간순간을 영원히 
+         기억될 빛나는 제품들로 여러분의 인생을 채워드립니다. 
+        </p>
+        <div class="re_cont_sub_inner">
+          <ul>
+            <li>
+              <span>LSPX-S3</span>
+            </li>
+            <li>
+              <span>NW-WM1ZM2</span>
+            </li>
+            <li>
+              <span>PS5 Standard</span>
+            </li>
+          </ul>
+          <span class="re_cont_btn_box">
+            <button>더 보러가기</button>
+          </span>
+        </div>
+      </div>
+    </section>
+
+  </article>
+  <footer>
+    <div class="foo_wrapper">
+    <div class="pc_foo_logo">
+      <img src="../images/logo/sony_logo.svg" alt="">
+    </div>
+    <div class="f_inner">
+      <div class="foo_top">
+        <div class="foo_leagal">
+          <div class="foo_leagal_1box">
+            <span>고객센터</span>
+            <span>이용약관</span>
+            <span>개인정보처리방침</span>
+          </div>
+          <div class="foo_leagaal_2box">
+            <span>이메일무단수집금지</span>
+            <span>Contact Us</span>
+          </div>
+        </div>
+      </div>
+      <div class="foo_mid">
+        <div class="foo_info">
+          <p>
+            사업장주소 : 서울특별시 영등포구 국제금융로 10 원아이에프씨 24F
+          </p>
+          <p>
+            대표이사 : Okura Kikuo
+          </p>
+          <p>
+            사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜
+          </p>
+          <p>
+            TEL : 소니코리아 고객센터 1588-0911
+          </p>
+          <p>
+            E-MAIL : cshelp@sony.co.kr
+          </p>
+        </div>
+        <ul class="foo_social">
+          <li><img src="../images/icon/facebook.svg" alt="facebook"></li>
+          <li><img src="../images/icon/instagram.svg" alt="instagram"></li>
+          <li><img src="../images/icon/youtube.svg" alt="youtube"></li>
+          <li><img src="../images/icon/blog.svg" alt="blog"></li>
+        </ul>
+        <div class="foo_group">
+          <button>
+            Sony Family
+          </button>
+          <div class="foo_family_inner">
+            <h4 class="foo_optgroup_label">
+              Sony Family
+            </h4>
+            <ul class="optgroup">
+              <li class="option">
+                <a>소니코리아</a>
+              </li>
+              <li class="option">
+                <a>소니코리아 고객지원</a>
+              </li>
+              <li class="option">
+                <a>소니 알파 α</a>
+              </li>
+              <li class="option">
+                <a>소니 방송/업무용 솔루션</a>
+              </li>
+              <li class="option">
+                <a>소니 방송 업무용 솔루션 고객지원</a>
+              </li>
+            </ul>
+            <h4 class="foo_optgroup_label">
+              Family Company
+            </h4>
+            <ul class="optgroup">
+              <li class="option">
+                <a>소니 인터렉티브 엔터테인먼트 코리아</a>
+              </li>
+              <li class="option">
+                <a>소니 뮤직 엔터테인먼트 코리아</a>
+              </li>
+              <li class="option">
+                <a>소니 ATV 뮤직 퍼블리싱 코리아</a>
+              </li>
+              <li class="option">
+                <a>소니 픽쳐스 엔터테인먼트 코리아</a>
+              </li>
+              <li class="option">
+                <a>소니 픽쳐스 텔레비전 코리아</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foo_bottom">
+        <p class="foo_copy">
+          Copyright © Sony Korea Corporation. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+    <script>
+      const foo_btn = document.querySelector(".foo_group button");
+      const foo_btn_box = document.querySelector(".foo_family_inner");
+      foo_btn.addEventListener("click",()=> {
+        if(!foo_btn.classList.contains("on")) {
+          foo_btn.classList.add("on");
+        } else {
+          foo_btn.classList.remove("on");
+        }
+      })
+    </script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../images/logo/title_logo.png" type="image/x-icon">
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/account.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="../javascript/menu.js" defer></script>
+<script src="../javascript/cart.js" defer></script>
+<title>Order</title>
+<style>
+	.pc_menu_lists> li:nth-child(3)> span {
+		color: #fff;
+	}
+	.pc_menu_lists> li:nth-child(4)> span{
+		color: #5865f5;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<div class="header_inner">
+		<h1 class="logo" onclick="location.href='index.html'">
+		<img src="../images/logo/sony_logo.svg" alt="logo">
+		</h1>
+		<nav>
+		<ul class="pc_menu_lists">
+			<li>
+				<span onclick="location.href='product.html'">Product</span>
+				</li>
+			<li>
+				<span onclick="location.href='login.html'">Login</span>
+			</li>
+			<li>
+				<span onclick="location.href='register.html'">Join</span>
+			</li>
+			<li>
+				<span onclick="location.href='cart.html'">Order</span>
+			</li>
+
+			<li onclick="location.href='faq.html'">
+			<span>Faq & Notice</span>
+			</li>
+			<li>
+				<span onclick="location.href='inquiry.html'">Inquiry</span>
+				</li>
+			<li>
+				<span onclick="location.href='membership.html'">Membership</span>
+				</li>
+
+				<li>
+					<span onclick="location.href='gallery.html'">Gallery</span>
+					</li>
+			<li>
+			<span onclick="location.href='location.html'">Location</span>
+			</li>
+		</ul>
+		<ul class="main_menu">
+			<li class="pc log cursor">
+			<span
+			onclick="location.href='login.html'"><img src="../images/icon/main_login.svg" alt="login"></span>
+			</li>
+			<li class="pc cursor cart_go" onclick="location.href='cart.html'">
+			<img src="../images/icon/main_cart.svg" alt="장바구니">
+			<span class="badge"><span>0</span></span>
+			</li>
+			<li class="search cursor">
+			<img src="../images/icon/search.svg" alt="search_img">
+			<div class="search_contents">
+				<div class="search_content">
+					<button class="search_close">
+					<span class="material-symbols-outlined"> close </span>
+					</button>
+					<form action="find_out" method="get">
+						<div class="input_wraper">
+							<button>
+							<span class="material-symbols-outlined"> search </span>
+							</button>
+							<input type="search" placeholder="검색어를 입력해주세요.">
+						</div>
+					</form>
+					<div class="suggestions_wraper">
+						<div class="nodata">
+							<p>
+									최근 검색어가 없습니다.
+							</p>
+						</div>
+						<div class="suggestions">
+							<p>
+									인기검색어
+							</p>
+							<div class="recommend">
+								<ul>
+									<li># WH-1000XM5</li>
+									<li># ZV-1</li>
+									<li># ILCE-7M4</li>
+									<li># LinkBuds S</li>
+									<li># LSPX-S3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="search_dashboard_wraper">
+						<div class="contents">
+							<img src="../images/main/search_img_1.png" alt="카메라">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="contents">
+							<img src="../images/main/search_img_2.png" alt="이어폰">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="pc_contents">
+							<img src="../images/main/search_img_3.png" alt="">
+							<span class="badge_text" style="color: rgb(255, 78, 0);">
+							NEW </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>
+			<li id="menu">
+			<span>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+			</span>
+			</li>
+		</ul>
+		</nav>
+		</div>
+		<div class="sitemap">
+		<div class="txt-box">
+			<ul class="link-menu">
+				<li class="mobile_member_login member_login">
+				<span onclick="location.href='register.html'">회원가입</span>
+				</li>
+				<li class="member_menuorder">
+				<span onclick="location.href='login.html'">주문/배송 조회</span>
+				</li>
+				<li class="mobile_member_cart cart_go">
+				<span onclick="location.href='cart.html'">장바구니 <span class="badge">
+				<span>0</span>
+				</span>
+				</span>
+				</li>
+			</ul>
+			<ul class="sitemap-menu">
+				<li class="log">
+				<span onclick="location.href='login.html'">login</span>
+				<div class="line">
+				</div>
+				<ul class="sub_menu">
+					<li>
+					<span onclick="location.href='product.html'">product</span>
+					</li>
+					<li>
+					<span onclick="location.href='location.html'">location</span>
+					</li>
+					<li>
+					<span onclick="location.href='membership.html'">Membership</span>
+					</li>
+					<li>
+					<span onclick="location.href='gallery.html'">gallery</span>
+					</li>
+					<li>
+					<span onclick="location.href='faq.html'">faq & notice</span>
+					</li>
+					<li>
+					<span onclick="location.href='inquiry.html'">inquiry</span>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			<ul class="sns">
+				<li>
+				<a>
+				<img src="../images/icon/facebook.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/instagram.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/youtube.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/blog.svg" alt="">
+				</a>
+				</li>
+			</ul>
+		</div>
+		<div class="pc_sitemap_img_box">
+			<ul class="site_img_list">
+				<li><img src="../images/main/pc_menu_img_1.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_2.jpg" alt="" style="object-fit:initial;"></li>
+				<li><img src="../images/main/pc_menu_img_3.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_4.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_5.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_6.jpg" alt=""></li>
+			</ul>
+		</div>
+		</div>
+		</header>
+<div class="cart">
+	<div class="mypg_container">
+		<div class="mypg_login cart">
+			<div class="cart_box">
+				<h2 class="mypg_title cart">장바구니</h2>
+				<ol class="cart_box_list">
+					<li class="on"><i class="step_ico cart"></i>
+					<p>
+						장바구니
+					</p>
+					</li>
+					<li><i class="step_ico ordered"></i>
+					<p>
+						주문·결제
+					</p>
+					</li>
+					<li><i class="step_ico confirm"></i>
+					<p>
+						주문완료
+					</p>
+					</li>
+				</ol>
+				<!-- <div class="empty_cart_box">
+					<i class="empty_ico"></i>
+					<p class="emptyinfo_title">
+						장바구니에 담긴 상품이 없습니다.
+					</p>
+					<div class="btn_box cart_out">
+						<button type="button" onclick="location.href='index.html'">쇼핑 계속 하기</button>
+					</div>
+				</div> -->
+				<div class="cart_func">
+					<div class="cart_func_check">
+						<div class="check_box">
+							<input type="checkbox" id="check_cart_items" class="cart_check_inp check_all" name="check_cart_item" checked>
+							<label for="check_cart_items">
+								전체
+							</label>
+						</div>
+					</div>
+					<div class="cart_func_buttons">
+						<button type="button">선택 삭제</button>
+					</div>
+				</div>
+				<div class="cart_order_list">
+					<div class="cart_order_list_table">
+						<div class="pc cart_order_list_table_head">
+							<div class="cart_table_row">
+								<div class="cart_table_cell">제품</div>
+								<div class="cart_table_cell">가격</div>
+								<div class="cart_table_cell">수량</div>
+								<div class="cart_table_cell">합계</div>
+								<div class="cart_table_cell ir">삭제</div>
+							</div>
+						</div>
+						<div class="cart_order_list_table_body">
+							<div class="cart_table_row">
+								<div class="cart_table_cell wrap">
+									<div class="cart_prd">
+										<div class="cart_prd_check check_only">
+											<input type="checkbox" class="cart_check_inp" checked name="check_select">
+										</div>
+										<div class="cart_prd_thumb">
+											<img src="https://rlyfaazj0.toastcdn.net/migration/3730_1/goods/25251275_List0.png" alt="">
+										</div>
+										<div class="cart_prd_info">
+											<div class="cart_prd_name">LSPX-S3</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="cart_table_cell prd_price">
+									399000
+									<span class="cart_won">원</span>
+								</div>
+								<div class="cart_table_cell prd_count">
+									<div class="cart_count_box">
+										<button class="cart_minus">감소</button>
+										<input type="text" readonly class="cart_count" value="1">
+										<button class="cart_plus">
+											증가
+										</button>
+									</div>
+								</div>
+								<div class="cart_table_cell prd_total">
+								<span class="cart_num">	399000</span>
+									<span class="cart_won">원</span>
+								</div>
+								<div class="cart_table_cell">
+									<button class="cart_prd_del">
+										<img src="../images/account/cart_del_img.svg" alt="제품 삭제">
+									</button>
+								</div>
+							</div>
+							<div class="cart_table_row">
+								<div class="cart_table_cell wrap">
+									<div class="cart_prd">
+										<div class="cart_prd_check check_only">
+											<input type="checkbox" name='check_select' class="cart_check_inp" checked >
+										</div>
+										<div class="cart_prd_thumb">
+											<img src="https://rlyfaazj0.toastcdn.net/migration/3730_1/goods/80819081_List0.png" alt="">
+										</div>
+										<div class="cart_prd_info">
+											<div class="cart_prd_name">ZV-1</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="cart_table_cell prd_price">
+									999000
+									<span class="cart_won">원</span>
+								</div>
+								<div class="cart_table_cell prd_count">
+									<div class="cart_count_box">
+										<button class="cart_minus">감소</button>
+										<input type="text" readonly class="cart_count" value="1">
+										<button class="cart_plus">
+											증가
+										</button>
+									</div>
+								</div>
+								<div class="cart_table_cell prd_total">
+								 <span class="cart_num">	999000</span>
+									<span class="cart_won">원</span>
+								</div>
+								<div class="cart_table_cell">
+									<button class="cart_prd_del">
+										<img src="../images/account/cart_del_img.svg" alt="제품 삭제">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart_order_list_table_foot">
+						<div class="cart_prd_summary">
+							<span class="cart_prd_summary_length">결제 예정 금액(총 <span class="cart_total_sum"> 2</span>개)</span>
+							<span class="cart_prd_summary_price">
+							<span class="cart_total_num">	1398000</span>
+								<span class="cart_won">원</span>
+							</span>
+							<p class="cart_prd_summary_warning">
+								최종 결제금액은 고객님의
+								<span class="mo_block">
+									쿠폰 / 마일리지 적용에 따라 달라질 수 있습니다.
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="cart_button_wrap">
+						<span class="cart_white_btn">쇼핑 계속 하기</span>
+						<span class="cart_black_btn">구매하기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="foo_wrapper">
+	<div class="pc_foo_logo">
+		<img src="../images/logo/sony_logo.svg" alt="">
+	</div>
+	<div class="f_inner">
+		<div class="foo_top">
+			<div class="foo_leagal">
+				<div class="foo_leagal_1box">
+					<span>고객센터</span>
+					<span>이용약관</span>
+					<span>개인정보처리방침</span>
+				</div>
+				<div class="foo_leagaal_2box">
+					<span>이메일무단수집금지</span>
+					<span>Contact Us</span>
+				</div>
+			</div>
+		</div>
+		<div class="foo_mid">
+			<div class="foo_info">
+				<p>
+					사업장주소 : 서울특별시 영등포구 국제금융로 10 원아이에프씨 24F
+				</p>
+				<p>
+					대표이사 : Okura Kikuo
+				</p>
+				<p>
+					사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜
+				</p>
+				<p>
+					TEL : 소니코리아 고객센터 1588-0911
+				</p>
+				<p>
+					E-MAIL : cshelp@sony.co.kr
+				</p>
+			</div>
+			<ul class="foo_social">
+				<li><img src="../images/icon/facebook.svg" alt="facebook"></li>
+				<li><img src="../images/icon/instagram.svg" alt="instagram"></li>
+				<li><img src="../images/icon/youtube.svg" alt="youtube"></li>
+				<li><img src="../images/icon/blog.svg" alt="blog"></li>
+			</ul>
+			<div class="foo_group">
+				<button>
+					Sony Family
+				</button>
+				<div class="foo_family_inner">
+					<h4 class="foo_optgroup_label">
+						Sony Family
+					</h4>
+					<ul class="optgroup">
+						<li class="option">
+							<a>소니코리아</a>
+						</li>
+						<li class="option">
+							<a>소니코리아 고객지원</a>
+						</li>
+						<li class="option">
+							<a>소니 알파 α</a>
+						</li>
+						<li class="option">
+							<a>소니 방송/업무용 솔루션</a>
+						</li>
+						<li class="option">
+							<a>소니 방송 업무용 솔루션 고객지원</a>
+						</li>
+					</ul>
+					<h4 class="foo_optgroup_label">
+						Family Company
+					</h4>
+					<ul class="optgroup">
+						<li class="option">
+							<a>소니 인터렉티브 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 뮤직 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 ATV 뮤직 퍼블리싱 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 픽쳐스 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 픽쳐스 텔레비전 코리아</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="foo_bottom">
+			<p class="foo_copy">
+				Copyright © Sony Korea Corporation. All rights reserved.
+			</p>
+		</div>
+	</div>
+</div>
+	<script>
+		const foo_btn = document.querySelector(".foo_group button");
+		const foo_btn_box = document.querySelector(".foo_family_inner");
+		foo_btn.addEventListener("click",()=> {
+			if(!foo_btn.classList.contains("on")) {
+				foo_btn.classList.add("on");
+			} else {
+				foo_btn.classList.remove("on");
+			}
+		})
+	</script>
+</footer>
+</body>
+</html>

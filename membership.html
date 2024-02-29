@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../images/logo/title_logo.png" type="image/x-icon">
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/sub.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="../javascript/menu.js" defer></script>
+<title>Membership</title>
+<style>
+	@media screen and (min-width:1366px) {
+		.pc_menu_lists> li:nth-child(7)> span {
+			color: #5865f5;
+		}
+	}
+</style>
+</head>
+<body>
+	<header>
+		<div class="header_inner">
+		<h1 class="logo" onclick="location.href='index.html'">
+		<img src="../images/logo/sony_logo.svg" alt="logo">
+		</h1>
+		<nav>
+		<ul class="pc_menu_lists">
+			<li>
+				<span onclick="location.href='product.html'">Product</span>
+				</li>
+			<li>
+				<span onclick="location.href='login.html'">Login</span>
+			</li>
+			<li>
+				<span onclick="location.href='register.html'">Join</span>
+			</li>
+			<li>
+				<span onclick="location.href='cart.html'">Order</span>
+			</li>
+
+			<li onclick="location.href='faq.html'">
+			<span>Faq & Notice</span>
+			</li>
+			<li>
+				<span onclick="location.href='inquiry.html'">Inquiry</span>
+				</li>
+			<li>
+				<span onclick="location.href='membership.html'">Membership</span>
+				</li>
+
+				<li>
+					<span onclick="location.href='gallery.html'">Gallery</span>
+					</li>
+			<li>
+			<span onclick="location.href='location.html'">Location</span>
+			</li>
+		</ul>
+		<ul class="main_menu">
+			<li class="pc log cursor">
+			<span
+			onclick="location.href='login.html'"><img src="../images/icon/main_login.svg" alt="login"></span>
+			</li>
+			<li class="pc cursor cart_go" onclick="location.href='cart.html'">
+			<img src="../images/icon/main_cart.svg" alt="장바구니">
+			<span class="badge"><span>0</span></span>
+			</li>
+			<li class="search cursor">
+			<img src="../images/icon/search.svg" alt="search_img">
+			<div class="search_contents">
+				<div class="search_content">
+					<button class="search_close">
+					<span class="material-symbols-outlined"> close </span>
+					</button>
+					<form action="find_out" method="get">
+						<div class="input_wraper">
+							<button>
+							<span class="material-symbols-outlined"> search </span>
+							</button>
+							<input type="search" placeholder="검색어를 입력해주세요.">
+						</div>
+					</form>
+					<div class="suggestions_wraper">
+						<div class="nodata">
+							<p>
+									최근 검색어가 없습니다.
+							</p>
+						</div>
+						<div class="suggestions">
+							<p>
+									인기검색어
+							</p>
+							<div class="recommend">
+								<ul>
+									<li># WH-1000XM5</li>
+									<li># ZV-1</li>
+									<li># ILCE-7M4</li>
+									<li># LinkBuds S</li>
+									<li># LSPX-S3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="search_dashboard_wraper">
+						<div class="contents">
+							<img src="../images/main/search_img_1.png" alt="카메라">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="contents">
+							<img src="../images/main/search_img_2.png" alt="이어폰">
+							<span class="badge_text" style="color: rgb(34, 34, 34);">
+							EVENT </span>
+						</div>
+						<div class="pc_contents">
+							<img src="../images/main/search_img_3.png" alt="">
+							<span class="badge_text" style="color: rgb(255, 78, 0);">
+							NEW </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</li>
+			<li id="menu">
+			<span>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+			</span>
+			</li>
+		</ul>
+		</nav>
+		</div>
+		<div class="sitemap">
+		<div class="txt-box">
+			<ul class="link-menu">
+				<li class="mobile_member_login member_login">
+				<span onclick="location.href='register.html'">회원가입</span>
+				</li>
+				<li class="member_menuorder">
+				<span onclick="location.href='login.html'">주문/배송 조회</span>
+				</li>
+				<li class="mobile_member_cart cart_go">
+				<span onclick="location.href='cart.html'">장바구니 <span class="badge">
+				<span>0</span>
+				</span>
+				</span>
+				</li>
+			</ul>
+			<ul class="sitemap-menu">
+				<li class="log">
+				<span onclick="location.href='login.html'">login</span>
+				<div class="line">
+				</div>
+				<ul class="sub_menu">
+					<li>
+					<span onclick="location.href='product.html'">product</span>
+					</li>
+					<li>
+					<span onclick="location.href='location.html'">location</span>
+					</li>
+					<li>
+					<span onclick="location.href='membership.html'">Membership</span>
+					</li>
+					<li>
+					<span onclick="location.href='gallery.html'">gallery</span>
+					</li>
+					<li>
+					<span onclick="location.href='faq.html'">faq & notice</span>
+					</li>
+					<li>
+					<span onclick="location.href='inquiry.html'">inquiry</span>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			<ul class="sns">
+				<li>
+				<a>
+				<img src="../images/icon/facebook.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/instagram.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/youtube.svg" alt="">
+				</a>
+				</li>
+				<li>
+				<a>
+				<img src="../images/icon/blog.svg" alt="">
+				</a>
+				</li>
+			</ul>
+		</div>
+		<div class="pc_sitemap_img_box">
+			<ul class="site_img_list">
+				<li><img src="../images/main/pc_menu_img_1.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_2.jpg" alt="" style="object-fit:initial;"></li>
+				<li><img src="../images/main/pc_menu_img_3.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_4.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_5.jpg" alt=""></li>
+				<li><img src="../images/main/pc_menu_img_6.jpg" alt=""></li>
+			</ul>
+		</div>
+		</div>
+		</header>
+
+<div class="member_contents">
+    <div class="member_wraper">
+        <div class="member">
+            <div class="membership_top">
+                <div class="membership_title_box">
+                    <div class="member_subtitle">등급 & 혜택 안내</div>
+                    <h1 class="common_head_name">
+                        소니스토어 멤버십
+                    </h1>
+                    <p class="member_desc">
+                        소니스토어 회원이 되시면 다양한 멤버십 혜택을 누리실 수 있습니다!
+                    </p>
+                    <div class="member_line_box">
+                        <p class="member_txt">
+                            소니스토어 온라인 구매 시
+                            <strong class="member_amp">
+                                금액대 관계 없이 모두
+                                <span>무</span>
+                                <span>료</span>
+                                <span>배</span>
+                                <span>송!</span>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="membership_bottom">
+                <div class="member_tabs">
+                    <ul>
+                      <li class="member_tab on"><span>프리미엄 서비스</span></li>
+                        <li class="member_tab"><span>마일리지</span></li>
+                        <li class="member_tab"><span>쿠폰 안내</span></li>
+                    </ul>
+                </div>
+                <div class="member_panels_wrapper">
+<div class="member_panel">
+  <div class="prmm_smry">
+    <h2 class="prmm_smry_title">프리미엄 서비스란?</h2>
+    <p class="prmm_smry_desc">고객님께서 소니제품을 구입하거나 사용 시에 보다 편리하게 사용하실<br> 수 있도록 제공해 드리는 <strong
+        class="primary-color">소니스토어만의 특별한 서비스</strong>입니다.</p>
+    <ul class="prmm_smry_lists">
+      <li class="prmm_smry_list">기프트<h3 class="prmm_smry_item">선물하기 서비스</h3>
+      </li>
+      <li class="prmm_smry_list">운송<h3 class="prmm_smry_item">무료배송/친환경<br>패키지 서비스</h3>
+      </li>
+      <li class="prmm_smry_list">비디오<h3 class="prmm_smry_item">영상 변환 서비스</h3>
+      </li>
+      <li class="prmm_smry_list">수리<h3 class="prmm_smry_item">연장 서비스 플랜</h3>
+      </li>
+    </ul>
+  </div>
+  <div class="prmm_dtl">
+    <ul class="prmm_dtl_lists">
+      <li class="prmm_dtl_list">
+        <div class="prmm_dtl_pic"><img src="../images/sub/membership_premium_list_img_1.jpg" alt="선물하기 서비스"
+            class="prmm_dtl_img"></div>
+        <h3 class="prmm_dtl_title">선물하기 서비스</h3>
+        <ul class="prmm_dtl_prctns">
+          <li class="prmm_dtl_prctn">선물하기 서비스는 <strong class="primary-color">소니스토어 회원만</strong> 온라인 또는 앱에서 이용가능한 서비스입니다.
+          </li>
+          <li class="prmm_dtl_prctn">선물하기 서비스는 <strong class="primary-color">제품 1건의 구매</strong>(결제건)에 한해 이용이 가능합니다.</li>
+        </ul>
+        <p class="prmm_dtl_note">* 제품 1건 결제(구매 수량은 여러개 가능), 복수 배송지 불가</p>
+      </li>
+      <li class="prmm_dtl_list">
+        <div class="prmm_dtl_pic"><img src="../images/sub/membership_premium_list_img_2.jpg" alt="무료배송/친환경 패키지 서비스"
+            class="prmm_dtl_img"></div>
+        <h3 class="prmm_dtl_title">무료배송/친환경 패키지 서비스</h3>
+        <ul class="prmm_dtl_prctns">
+          <li class="prmm_dtl_prctn">소니스토어에서는 온라인 주문 한정으로 친환경 패키징을 제공합니다.</li>
+          <li class="prmm_dtl_prctn">박스/완충 포장재/테이프 모두 종이를 사용하여 환경 보호에 기여합니다.</li>
+          <li class="prmm_dtl_prctn">퀵서비스는 구매 금액이 <strong class="primary-color">5만원 이상</strong>일 경우 고객 요청에 따라 서울/경기 지역의
+            퀵서비스 지원이 가능하며,</li>
+          <li class="prmm_dtl_prctn">제품 구매 금액에 따라 배송 비용이 할증될 수 있습니다.<strong class="primary-color">퀵서비스 비용은 고객
+              부담</strong>입니다.</li>
+          <li class="prmm_dtl_prctn"><br></li>
+          <li class="prmm_dtl_prctn"><strong class="primary-color">#소니스토어 온라인</strong></li>
+          <li class="prmm_dtl_prctn">* 일반배송 : CJ대한통운 택배배송</li>
+          <li class="prmm_dtl_prctn">* 퀵서비스 : 구매 금액이 5만원 이상의 경우 고객 요청에 따라 서울/경기 지역의 퀵서비스 지원이 가능(비용 고객 부담)</li>
+        </ul>
+      </li>
+      <li class="prmm_dtl_list">
+        <div class="prmm_dtl_pic"><img src="../images/sub/membership_premium_list_img_3.jpg" alt="영상변환 서비스"
+            class="prmm_dtl_img"></div>
+        <h3 class="prmm_dtl_title">영상변환 서비스</h3>
+        <ul class="prmm_dtl_prctns">
+          <li class="prmm_dtl_prctn">영상변환 서비스는 고객님께서 소장하고 계시는 비디오 테이프를 <strong class="primary-color">USB 메모리 또는 DVD
+              디스크</strong>로 변환하여 드리는 서비스입니다.</li>
+          <li class="prmm_dtl_prctn">변환 가능한 테이프는 <strong class="primary-color">6mm, 8mm 또는 VHS 테이프</strong>이며, 가까운 서비스
+            센터로 비디오 테이프를 가지고 방문하시면 변환 서비스를 받으실 수 있습니다.</li>
+        </ul><a class="prmm_dtl_link">자세히 보기</a>
+      </li>
+      <li class="prmm_dtl_list">
+        <div class="prmm_dtl_pic"><img src="../images/sub/membership_premium_list_img_4.jpg" alt="연장 서비스 플랜"
+            class="prmm_dtl_img"></div>
+        <h3 class="prmm_dtl_title">연장 서비스 플랜</h3>
+        <ul class="prmm_dtl_prctns">
+          <li class="prmm_dtl_prctn">연장 서비스 플랜은 소정의 비용으로 제품 구입일로부터 2년 또는 3년 동안 횟수와 금액 상관 없이 안심하고 무상 수리를 받을 수 있는 프리미엄
+            서비스입니다.</li>
+          <li class="prmm_dtl_prctn">소니스토어 온라인 및 전화주문을 통해서 구매 가능합니다.</li>
+          <li class="prmm_dtl_prctn">연장 서비스 플랜 적용은 <strong class="primary-color">상품 구매일로부터 7일 이후</strong> 자동 적용됩니다.</li>
+          <li class="prmm_dtl_prctn">연장 서비스 플랜 상품은 <strong class="primary-color">무형 상품</strong>으로 별도 배송되지 않습니다.</li>
+        </ul><a class="prmm_dtl_link">자세히 보기</a>
+      </li>
+    </ul>
+  </div>
+  <div class="step">
+    <span>1</span> /
+    3
+  </div>
+</div>
+                    <div class="member_panel false">
+                        <div class="mileage_info">
+                            <div class="mileage_info_inner">
+                                <strong class="mileage_info_title">
+                                    마일리지 안내
+                                </strong>
+                                <p class="mileage_info_inner_txt">
+                                    소니스토어에서 제품 구매 시 결제금액의
+                                    <em>최대 4%</em>
+                                    <span class="mileage_br">적립되며, 적립된 마일리지는 적립 시점으로부터 <em>1년간</em> 사용 가능합니다.</span>
+                                </p>
+                                <p class="mileage_info_inner_txt">
+                                    * 단, ESP, Playstation 제품 및 일부 상품은 마일리지가 적립 되지 않습니다.
+                                    <br>
+                                    쿠폰 및 마일리지 사용 시, 쿠폰 및 마일리지 사용 금액을 제외한 결제 금액만 적립됩니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pc_mileage_classes_wrap">
+                            <div class="mileage_cl_table">
+                                <div class="mileage_cl_table_head">
+                                    <div class="mileage_cl_table_row">
+                                    <div class="mileage_cl_table_cell">구분</div>
+                                    <div class="mileage_cl_table_cell">VIP 회원</div>
+                                    <div class="mileage_cl_table_cell">MEMBERSHIP 회원</div>
+                                    </div>
+                                </div>
+                                <div class="mileage_cl_table_body">
+                                    <div class="mileage_cl_table_row">
+                                        <div class="mileage_cl_table_cell">
+                                            <strong class="m_cl_emp">회원등급</strong>
+                                        </div>
+                                        <div class="mileage_cl_table_cell">
+                                            <img src="../images/sub/membership_vip_img.svg" alt="VIP">
+                                        </div>
+                                        <div class="mileage_cl_table_cell">
+                                            <img src="../images/sub/membership_family_img.svg" alt="family">
+                                        </div>
+                                    </div>
+                                    <div class="mileage_cl_table_row">
+                                        <div class="mileage_cl_table_cell">
+                                            <strong class="m_cl_emp">등급기준</strong>
+                                        </div>
+                                        <div class="mileage_cl_table_cell">
+                                            구매금액(누적)이
+                                            <strong class="m_cl_emp">
+                                                200만원 이상
+                                            </strong>
+                                            이 되는 시점 익일부터 VIP 혜택 2년 간 적용
+                                        </div>
+                                        <div class="mileage_cl_table_cell">
+                                            구매금액(누적)이
+                                            <strong class="m_cl_emp">
+                                                200만원 미만
+                                            </strong>
+                                            시 익일부터 MEMBERSHIP 혜택 2년 간 적용
+                                        </div>
+                                    </div>
+                                    <div class="mileage_cl_table_row">
+                                        <div class="mileage_cl_table_cell">
+                                            <strong class="m_cl_emp">적립혜택</strong>
+                                        </div>
+                                        <div class="mileage_cl_table_cell">
+                                            제품 구매 시 결제 금액의
+                                            <strong class="m_cl_emp">4%</strong>
+                                            적립
+                                        </div>
+                                        <div class="mileage_cl_table_cell">
+                                            제품 구매 시 결제 금액의
+                                            <strong class="m_cl_emp">
+                                                2%
+                                            </strong>
+                                            적립
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile_mileage_classes_wrap">
+                            <table class="member_common_table">
+                                <caption>소니스토어 멤버십 정보</caption>
+                                <colgroup>
+                                    <col width="35%"><col width="65%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <img src="../images/sub/membership_vip_img.svg" alt="vip">
+                                            <p class="mem_name">VIP 회원</p>
+                                        </th>
+                                        <td>
+                                            <p class="member_benefit">
+                                                구매 금액(누적)이
+                                                <strong>200만원 이상</strong>
+                                                이 되는 시점 익일부터 VIP 혜택 2년 간 적용
+                                            </p>
+                                            <p class="member_benefit">
+                                                제품 구매 시 결제 금액의
+                                                <strong>4%</strong>
+                                                적립
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            <img src="../images/sub/membership_family_img.svg" alt="family">
+                                            <p class="mem_name">MEMBERSHIP 회원</p>
+                                        </th>
+                                        <td>
+                                            <p class="member_benefit">
+                                                구매 금액(누적)이
+                                                <strong>200만원 미만</strong>
+                                                시 익일부터 MEMBERSHIP 혜택이 2년 간 적용
+                                            </p>
+                                            <p class="member_benefit">
+                                                제품 구매 시 결제 금액의
+                                                <strong>2%</strong>
+                                                적립
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="mileage_bgarea">
+                            <div class="mileage_bgarea_inner">
+                                <strong class="mileage_bgarea_title">마일리지 적립 내역 확인</strong>
+                                <div class="mileage_message">
+                                    <div class="mileage_message_left">
+                                        <div class="message_txt"><p>안녕하세요, 소니스토어 !</p></div>
+                                        <div class="message_txt"><p>제 마일리지가 얼마 있는지 확인해보고 <span class="br">싶어요 !</span></p></div>
+                                    </div>
+                                    <div class="mileage_message_right"><div class="message_txt"><p>안녕하세요, 소니스토어 회원님 <span class="emoticon"></span></p></div><div class="message_txt"><p>마일리지는 로그인 후 <em class="empcolor">[마이페이지 &gt;</em><span class="br"><em class="empcolor">마일리지]</em> 탭에서 확인하실 수 있습니다.</span></p></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mileage_use">
+                            <div class="mileage_use_txt"><p>소니스토어 온라인 및 소니코리아 고객지원을 통한 구매 시에는 제품 수령일자 기준으로 <span class="m_cl_emp">7일 이후</span>에 적립 확인 가능합니다.</p><p>소니스토어 압구정에서 구매 시에는 <span class="m_cl_emp">구매 익일</span> 적립 확인 가능합니다.</p><p>마일리지 유효기간은 <strong>적립 시점으로부터 1년 후</strong> 소멸됩니다. <span class="mileage_br">(2011년 8월 9일 이후 적립 마일리지부터 적용)</span></p>
+                            </div>
+                            <div class="mileage_use_method">
+                                <strong class="mileage_use_method_tit">마일리지 사용방법</strong><ul class="mileage_use_method_list"><li class="method_01">소니스토어에서<br>제품 구매 시</li><li class="method_02">소니 공식 서비스센터<span class="m_br">에서 <span class="mileage_br">제품 수리 및 컨텐츠 이용 시</span></span></li></ul>
+                                <div class="mileage_use_method_txt"><p><strong>1마일리지는 1원</strong>으로 환산되며, <strong>5,000마일리지</strong>부터 현금처럼 사용하실 수 있습니다.</p><p>(마일리지와 원 환산 비율은 추후 변경가능성이 있으며, 이 경우 약관 3조 4항에 따라 고지함)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span>2</span> /
+                            3
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="member_panel false">
+                        
+                    <div class="coupon_zone">
+                        <div class="coupon_inner">
+                            <div class="coupon_list">
+                                <div class="coupon_box"><span class="coupon_type">ALL<br> COUPON</span>
+                                    <div class="coupon">
+                                        <div class="coupon_head"><span class="coupon_expiration">발행일로부터 30일</span>
+                                            <p class="coupon_expiration_title">첫 구매 감사 <span class="coupon_expiration_percentage">5%</span> 할인</p>
+                                            <p class="coupon_expiration_cut_title">소니스토어 온라인 회원으로서 첫 구매에 대한 <br class="pc_none">배송완료 후 발급</p>
+                                        </div>
+                                        <ul class="coupon_desc">
+                                            <li class="coupon_desc_lists"><strong class="coupon_desc_lists_title">발급대상</strong>
+                                                <p class="coupon_desc_lists_txt">소니스토어 전 제품 (단, ESP 및 Playstation 및 관련 제품 제외)</p>
+                                            </li>
+                                            <li class="coupon_desc_lists"><strong class="coupon_desc_lists_title">적용제품</strong>
+                                                <p class="coupon_desc_lists_txt">3만원 이상의 소니스토어 전 제품<br>(단, ESP 및 Playstation 및 관련 제품 제외)</p>
+                                            </li>
+                                            <li class="coupon_desc_lists"><strong class="coupon_desc_lists_title">할&nbsp;&nbsp;인&nbsp;&nbsp;율</strong>
+                                                <p class="coupon_desc_lists_txt">5%</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="coupon_box"><span class="coupon_type">ALL<br> COUPON</span>
+                                    <div class="coupon">
+                                        <div class="coupon_head"><span class="coupon_expiration">발행일로부터 60일</span>
+                                            <p class="coupon_expiration_title">정품등록 감사<br> 소니 액세서리 <span class="coupon_expiration_percentage">10%</span> 할인</p>
+                                        </div>
+                                        <ul class="coupon_desc">
+                                            <li class="coupon_desc_lists"><strong class="coupon_desc_lists_title">발급대상</strong>
+                                                <p class="coupon_desc_lists_txt">카오디오/디지털카메라/카메라 바디(별매렌즈)/캠코더/워크맨(MP3플레이어)/헤드폰/이어폰/스피커/홈오디오 등</p>
+                                            </li>
+                                            <li class="coupon_desc_lists"><strong class="coupon_desc_lists_title">적용제품</strong>
+                                                <p class="coupon_desc_lists_txt">소니 액세서리 (일부 액세서리 제외)</p>
+                                            </li>
+                                            <li class="coupon_desc_lists"><strong class="coupon_desc_lists_title">할&nbsp;&nbsp;인&nbsp;&nbsp;율</strong>
+                                                <p class="coupon_desc_lists_txt">10% (3만원 이상 구매 시 사용 가능)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coupon_guide_list">
+                            <p class="coupon_tit">주의사항</p>
+                            <ul class="coupon_list_dot">
+                                <li>쿠폰은 특별 할인제품 구매 시 사용이 불가합니다.</li>
+                                <li>쿠폰은 주문당 1매씩 사용 가능하며, 제품 1개에만 적용됩니다.</li>
+                                <li>주문 시 사용한 쿠폰은 해당 주문을 취소하더라도 복원되지 않습니다.</li>
+                                <li>사용처 : 소니스토어 온라인 및 전화주문, 소니스토어 압구정</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span>3</span> /
+                        3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+  const tabs = document.querySelectorAll(".member_tab");
+    const member_panels = document.querySelectorAll('.member_panel');
+    tabs.forEach((tab, i) => {
+      tab.addEventListener("click", () => {
+        for (let i = 0; i < tabs.length; i++) {
+          tabs[i].classList.remove("on");
+          member_panels[i].classList.add("false");
+        }
+        tabs[i].classList.add("on");
+        member_panels[i].classList.remove("false");
+      })
+    })
+</script>
+<footer>
+	<div class="foo_wrapper">
+	<div class="pc_foo_logo">
+		<img src="../images/logo/sony_logo.svg" alt="">
+	</div>
+	<div class="f_inner">
+		<div class="foo_top">
+			<div class="foo_leagal">
+				<div class="foo_leagal_1box">
+					<span>고객센터</span>
+					<span>이용약관</span>
+					<span>개인정보처리방침</span>
+				</div>
+				<div class="foo_leagaal_2box">
+					<span>이메일무단수집금지</span>
+					<span>Contact Us</span>
+				</div>
+			</div>
+		</div>
+		<div class="foo_mid">
+			<div class="foo_info">
+				<p>
+					사업장주소 : 서울특별시 영등포구 국제금융로 10 원아이에프씨 24F
+				</p>
+				<p>
+					대표이사 : Okura Kikuo
+				</p>
+				<p>
+					사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜
+				</p>
+				<p>
+					TEL : 소니코리아 고객센터 1588-0911
+				</p>
+				<p>
+					E-MAIL : cshelp@sony.co.kr
+				</p>
+			</div>
+			<ul class="foo_social">
+				<li><img src="../images/icon/facebook.svg" alt="facebook"></li>
+				<li><img src="../images/icon/instagram.svg" alt="instagram"></li>
+				<li><img src="../images/icon/youtube.svg" alt="youtube"></li>
+				<li><img src="../images/icon/blog.svg" alt="blog"></li>
+			</ul>
+			<div class="foo_group">
+				<button>
+					Sony Family
+				</button>
+				<div class="foo_family_inner">
+					<h4 class="foo_optgroup_label">
+						Sony Family
+					</h4>
+					<ul class="optgroup">
+						<li class="option">
+							<a>소니코리아</a>
+						</li>
+						<li class="option">
+							<a>소니코리아 고객지원</a>
+						</li>
+						<li class="option">
+							<a>소니 알파 α</a>
+						</li>
+						<li class="option">
+							<a>소니 방송/업무용 솔루션</a>
+						</li>
+						<li class="option">
+							<a>소니 방송 업무용 솔루션 고객지원</a>
+						</li>
+					</ul>
+					<h4 class="foo_optgroup_label">
+						Family Company
+					</h4>
+					<ul class="optgroup">
+						<li class="option">
+							<a>소니 인터렉티브 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 뮤직 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 ATV 뮤직 퍼블리싱 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 픽쳐스 엔터테인먼트 코리아</a>
+						</li>
+						<li class="option">
+							<a>소니 픽쳐스 텔레비전 코리아</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="foo_bottom">
+			<p class="foo_copy">
+				Copyright © Sony Korea Corporation. All rights reserved.
+			</p>
+		</div>
+	</div>
+</div>
+	<script>
+		const foo_btn = document.querySelector(".foo_group button");
+		const foo_btn_box = document.querySelector(".foo_family_inner");
+		foo_btn.addEventListener("click",()=> {
+			if(!foo_btn.classList.contains("on")) {
+				foo_btn.classList.add("on");
+			} else {
+				foo_btn.classList.remove("on");
+			}
+		})
+	</script>
+</footer>
+</body>
+</html>
