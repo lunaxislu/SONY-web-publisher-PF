@@ -44,8 +44,47 @@ SONY 하면 떠오르는 것은 "카메라" 이기에, 카메라를 중점으로
 
 
 ## 결과
-<img alt='index_desktop' src='https://github.com/lunaxislu/SONY-web-publisher-PF/assets/102783842/4450d7dd-b9d6-4832-b998-7f2f7c6d6696'>
+
+### Indext View
+
+<ul style='display:flex; height:460px'>
+  <li >
+    <caption>Desk_Top</caption>
+<img width='100%' style='object-fit:cover' alt='index_desktop' src='https://github.com/lunaxislu/SONY-web-publisher-PF/issues/1#issue-2190570740'>
+  </li>
+  <li>
+        <caption>mobile</caption>
+    <img width='100%' style='object-fit:cover'  alt='index_mobile' src='https://github.com/lunaxislu/SONY-web-publisher-PF/assets/102783842/e1c81e5a-4bac-4c48-9e39-5d4fcbf33e51'>
+  </li>
+</ul>
 
 
+---
 
+### Product View
 
+<ul style='display:flex; height:460px'>
+  <li >
+    <caption>Desk_Top</caption>
+<img width='100%' style='object-fit:cover' alt='product_desktop' src='https://github.com/lunaxislu/SONY-web-publisher-PF/assets/102783842/2c9c2b00-fac1-407c-8eff-e223902c4cc7'>
+  </li>
+  <li>
+    <caption>mobile</caption>
+    <img width='100%' style='object-fit:cover'  alt='product_mobile' src='https://github.com/lunaxislu/SONY-web-publisher-PF/assets/102783842/dab0e6e4-08a4-465a-b6c5-ebf128b5877c'>
+  </li>
+</ul>
+
+---
+
+### Gallery View
+
+<ul style='display:flex; height:460px'>
+  <li >
+    <caption>Desk_Top</caption>
+<img width='100%' style='object-fit:cover' alt='gallery_desktop' src='https://github.com/lunaxislu/SONY-web-publisher-PF/assets/102783842/c8a263b2-d9b6-47fd-b0ff-615ef6f0b214'>
+  </li>
+  <li>
+        <caption>mobile</caption>
+    <img width='100%' style='object-fit:cover'  alt='gallery_mobile' src='https://github.com/lunaxislu/SONY-web-publisher-PF/assets/102783842/f57ed770-6971-487a-a0f1-e30b8c0737d6'>
+  </li>
+</ul>
