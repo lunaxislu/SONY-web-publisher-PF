@@ -6,7 +6,8 @@
 
 기존 Sony Store UI/UX 디자인을 자신만의 관점으로 재해석하였습니다. 
 
-Origin SONY : [origin_sony](https://store.sony.co.kr/)
+Origin SONY : [origin_sony](https://store.sony.co.kr/) 
+
 My SONY : [PF](http://lunna.dothome.co.kr/)
 
 
