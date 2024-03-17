@@ -45,12 +45,12 @@ SONY 하면 떠오르는 것은 "카메라" 이기에, 카메라를 중점으로
 
 ## 결과
 
-### Indext View
+### Index View
 
-<ul style='display:flex; height:460px'>
+<ul style='display:flex;'>
   <li >
     <caption>Desk_Top</caption>
-<img width='100%' style='object-fit:cover' alt='index_desktop' src='https://github.com/lunaxislu/SONY-web-publisher-PF/issues/1#issue-2190570740'>
+<img width='100%' style='object-fit:cover' alt='index_desktop' src='https://github.com/lunaxislu/SONY-web-publisher-PF/assets/102783842/4450d7dd-b9d6-4832-b998-7f2f7c6d6696'>
   </li>
   <li>
         <caption>mobile</caption>
