@@ -41,8 +41,10 @@ SONY 하면 떠오르는 것은 "카메라" 이기에, 카메라를 중점으로
 
 **목표성**을 가졌기에 염두해 두면서 디자인 편집을 하였습니다. 
 
-## 결과
 
+
+## 결과
+<img alt='index_desktop' src='https://github.com/lunaxislu/SONY-web-publisher-PF/issues/1#issue-2190570740'>
 
 
 
